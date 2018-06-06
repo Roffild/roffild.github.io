@@ -1,4 +1,4 @@
-url = 'https://github.com/Roffild/RoffildLibrary/'
+url = 'https://github.com/Roffild/RoffildLibrary/blob/master/'
 with open('../RoffildLibrary/README.md', 'r') as org:
     with open('index.md', 'w+') as md:
         for line in org:
