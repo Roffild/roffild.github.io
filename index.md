@@ -1,39 +1,39 @@
 ﻿# Roffild's Library
 
 * Experts/Roffild/
-  * [AmazonUtils](Experts/Roffild/AmazonUtils) - can be used as an example of developing a project in Java
-  * [Alglib_MultilayerPerceptron.mq5](Experts/Roffild/Alglib_MultilayerPerceptron.mq5)
-  * [Alglib_RandomForest.mq5](Experts/Roffild/Alglib_RandomForest.mq5)
-  * [Examples/](Experts/Roffild/Examples/)
-    * [ToIndicator_Example.mq5](Experts/Roffild/Examples/ToIndicator_Example.mq5)
+  * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/Experts/Roffild/AmazonUtils) - can be used as an example of developing a project in Java
+  * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/Experts/Roffild/Alglib_MultilayerPerceptron.mq5)
+  * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/Experts/Roffild/Alglib_RandomForest.mq5)
+  * [Examples/](https://github.com/Roffild/RoffildLibrary/Experts/Roffild/Examples/)
+    * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/Experts/Roffild/Examples/ToIndicator_Example.mq5)
 * Include/Roffild/
-  * [MLPDataFile.mqh](Include/Roffild/MLPDataFile.mqh) - data format for Alglib_MultilayerPerceptron and Alglib_RandomForest
-  * [ArrayList_macros.mqh](Include/Roffild/ArrayList_macros.mqh) - this variant is still used because of poor template support by the code editor
-  * [ArrayList.mqh](Include/Roffild/ArrayList.mqh)
-  * [ArrayListClass.mqh](Include/Roffild/ArrayListClass.mqh)
-  * [CsvFile.mqh](Include/Roffild/CsvFile.mqh)
-  * [ForestSerializer.mqh](Include/Roffild/ForestSerializer.mqh)
-  * [Log4MQL.mqh](Include/Roffild/Log4MQL.mqh) and [Log4MQL_tofile.mqh](Include/Roffild/Log4MQL_tofile.mqh) + [module](Include/Roffild/LogMX) for [LogMX](http://www.logmx.com/)
-  * [OrderData.mqh](Include/Roffild/OrderData.mqh) - data dump for research
-  * [OrderSql.mqh](Include/Roffild/OrderSql.mqh)
-  * [Serialization.mqh](Include/Roffild/Serialization.mqh)
-  * [SqlFile.mqh](Include/Roffild/SqlFile.mqh)
-  * [Statistic.mqh](Include/Roffild/Statistic.mqh)
-  * [TesterSql.mqh](Include/Roffild/TesterSql.mqh) - optimization results in SQL and CSV formats
-  * [ToIndicator.mqh](Include/Roffild/ToIndicator.mqh) - displaying data from an expert using indicators
-  * [UnitTest.mqh](Include/Roffild/UnitTest.mqh)
-  * [RoffildJava/](Include/Roffild/RoffildJava/)
-    * [AmazonUtils](Include/Roffild/RoffildJava/AmazonUtils/)
-    * [RoffildLibrary](Include/Roffild/RoffildJava/RoffildLibrary/)
-    * [Spark](Include/Roffild/RoffildJava/Spark/) - reading from MLPDataFile
-    * [aws_ubuntu_user_data.sh](Include/Roffild/RoffildJava/AmazonUtils/build/resources/main/aws_ubuntu_user_data.sh) - working script for raising test agents on Ubuntu 14 in AWS
+  * [MLPDataFile.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/MLPDataFile.mqh) - data format for Alglib_MultilayerPerceptron and Alglib_RandomForest
+  * [ArrayList_macros.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/ArrayList_macros.mqh) - this variant is still used because of poor template support by the code editor
+  * [ArrayList.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/ArrayList.mqh)
+  * [ArrayListClass.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/ArrayListClass.mqh)
+  * [CsvFile.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/CsvFile.mqh)
+  * [ForestSerializer.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/ForestSerializer.mqh)
+  * [Log4MQL.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/Log4MQL.mqh) and [Log4MQL_tofile.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/Log4MQL_tofile.mqh) + [module](https://github.com/Roffild/RoffildLibrary/Include/Roffild/LogMX) for [LogMX](http://www.logmx.com/)
+  * [OrderData.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/OrderData.mqh) - data dump for research
+  * [OrderSql.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/OrderSql.mqh)
+  * [Serialization.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/Serialization.mqh)
+  * [SqlFile.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/SqlFile.mqh)
+  * [Statistic.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/Statistic.mqh)
+  * [TesterSql.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/TesterSql.mqh) - optimization results in SQL and CSV formats
+  * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/ToIndicator.mqh) - displaying data from an expert using indicators
+  * [UnitTest.mqh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/UnitTest.mqh)
+  * [RoffildJava/](https://github.com/Roffild/RoffildLibrary/Include/Roffild/RoffildJava/)
+    * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/Include/Roffild/RoffildJava/AmazonUtils/)
+    * [RoffildLibrary](https://github.com/Roffild/RoffildLibrary/Include/Roffild/RoffildJava/RoffildLibrary/)
+    * [Spark](https://github.com/Roffild/RoffildLibrary/Include/Roffild/RoffildJava/Spark/) - reading from MLPDataFile
+    * [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/Include/Roffild/RoffildJava/AmazonUtils/build/resources/main/aws_ubuntu_user_data.sh) - working script for raising test agents on Ubuntu 14 in AWS
 * Indicators/Roffild/
-  * [ToIndicator.mqh](Indicators/Roffild/ToIndicator.mqh)
-  * [ToIndicator.mq5](Indicators/Roffild/ToIndicator.mq5)
-  * [ToIndicator_window.mq5](Indicators/Roffild/ToIndicator_window.mq5)
+  * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/Indicators/Roffild/ToIndicator.mqh)
+  * [ToIndicator.mq5](https://github.com/Roffild/RoffildLibrary/Indicators/Roffild/ToIndicator.mq5)
+  * [ToIndicator_window.mq5](https://github.com/Roffild/RoffildLibrary/Indicators/Roffild/ToIndicator_window.mq5)
 * Scripts/Roffild/
-  * [MLPDataFileSparkTest](Scripts/Roffild/MLPDataFileSparkTest) - example project for Spark and MLPDataFile test
-  * [UnitTests](Scripts/Roffild/UnitTests)
+  * [MLPDataFileSparkTest](https://github.com/Roffild/RoffildLibrary/Scripts/Roffild/MLPDataFileSparkTest) - example project for Spark and MLPDataFile test
+  * [UnitTests](https://github.com/Roffild/RoffildLibrary/Scripts/Roffild/UnitTests)
 
 ## Installation
 
@@ -62,4 +62,4 @@ Column limit = 110
 
 ## License
 
-[Apache License 2.0](LICENSE)
+[Apache License 2.0](https://github.com/Roffild/RoffildLibrary/LICENSE)
