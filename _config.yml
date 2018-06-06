@@ -1,4 +1,6 @@
 # Site settings
+title: Roffild’s Library
+url: https://github.com/Roffild/RoffildLibrary/
 
 # Build settings
 markdown: kramdown
