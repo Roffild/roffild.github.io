@@ -10,3 +10,10 @@ include:
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "en"
