@@ -1,6 +1,12 @@
 # Site settings
 title: "Roffild’s Library"
+name: "Roffild’s Library"
 url: "https://github.com/Roffild/RoffildLibrary/"
+
+include:
+- google4410be7328757c9f.html
+- java
+- mql5
 
 # Build settings
 markdown: kramdown
