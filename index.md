@@ -1,5 +1,4 @@
 ﻿# Roffild's Library
-{% include header.html %}
 
 * Experts/Roffild/
   * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils) - can be used as an example of developing a project in Java
