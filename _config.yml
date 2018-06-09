@@ -4,18 +4,5 @@ name: "Roffild’s Library"
 url: "https://github.com/Roffild/RoffildLibrary/"
 #theme: minima
 
-include:
-  - .htaccess
-#- google4410be7328757c9f.html
-#- java
-#- mql5
-
 # Build settings
 markdown: kramdown
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      lang: "en"
