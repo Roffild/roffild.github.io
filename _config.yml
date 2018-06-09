@@ -1,10 +1,11 @@
-ï»¿# Site settings
-title: "Roffildâ€™s Library"
-name: "Roffildâ€™s Library"
+# Site settings
+title: "Roffild’s Library"
+name: "Roffild’s Library"
 url: "https://github.com/Roffild/RoffildLibrary/"
 #theme: minima
 
 include:
+  - .htaccess
 - google4410be7328757c9f.html
 - java
 - mql5
