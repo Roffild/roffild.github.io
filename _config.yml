@@ -2,7 +2,6 @@
 title: "Roffild’s Library"
 name: "Roffild’s Library"
 url: "https://github.com/Roffild/RoffildLibrary/"
-theme: minima
 
 # Build settings
 markdown: kramdown
