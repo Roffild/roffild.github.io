@@ -6,9 +6,9 @@ url: "https://github.com/Roffild/RoffildLibrary/"
 
 include:
   - .htaccess
-- google4410be7328757c9f.html
-- java
-- mql5
+#- google4410be7328757c9f.html
+#- java
+#- mql5
 
 # Build settings
 markdown: kramdown
