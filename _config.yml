@@ -3,5 +3,13 @@ title: "Roffild’s Library"
 name: "Roffild’s Library"
 url: "https://github.com/Roffild/RoffildLibrary/"
 
+include:
+  - _*.*
+
+exclude:
+  - _config.yml
+  - CNAME
+  - create_site.py
+
 # Build settings
 markdown: kramdown
