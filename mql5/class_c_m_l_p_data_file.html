@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
@@ -23,13 +23,14 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<a href="https://github.com/Roffild/RoffildLibrary/" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Roffild&#39;s Library
+   <div id="projectname"><a href="https://roffild.com/" target="_blank">Roffild&#39;s Library</a>
    </div>
    <div id="projectbrief">Library for MQL5 (MetaTrader) with support for Spark</div>
   </td>
@@ -96,9 +97,12 @@ $(document).ready(function(){initNavTree('class_c_m_l_p_data_file.html','');});
 <div class="title">CMLPDataFile Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>MLPDataFile = CSV in a binary format.  
- <a href="class_c_m_l_p_data_file.html#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>MLPDataFile = CSV in a binary format. </p>
+<p>The byte order is Little-Endian.</p>
+<p>Format: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> - NIn (only <span class="keywordflow">for</span> Alglib_MultilayerPerceptron and Alglib_RandomForest)</div><div class="line"><span class="keywordtype">int</span> - NOut (only <span class="keywordflow">for</span> Alglib_MultilayerPerceptron and Alglib_RandomForest)</div><div class="line"><span class="keywordtype">int</span> - <a class="code" href="class_c_m_l_p_data_file.html#ac0ffbd67bbf684722757ab207840e411">header</a> <a class="code" href="_array_list__macros_8mqh.html#af4b57d21919c42d55af03391f91a1c08">size</a></div><div class="line">   <span class="keywordflow">if</span> (<a class="code" href="class_c_m_l_p_data_file.html#ac0ffbd67bbf684722757ab207840e411">header</a> <a class="code" href="_array_list__macros_8mqh.html#af4b57d21919c42d55af03391f91a1c08">size</a> &gt; 0) {</div><div class="line">      <span class="keywordtype">int</span> - length of <span class="keywordtype">string</span></div><div class="line">      byte[] - UTF-16LE</div><div class="line">      ...</div><div class="line">   }</div><div class="line"><span class="keywordtype">int</span> - data <a class="code" href="_array_list__macros_8mqh.html#af4b57d21919c42d55af03391f91a1c08">size</a></div><div class="line"><span class="keywordtype">double</span>[data <a class="code" href="_array_list__macros_8mqh.html#af4b57d21919c42d55af03391f91a1c08">size</a>] - data array</div><div class="line">...</div></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Include/Roffild/<a class="el" href="_m_l_p_data_file_8mqh.html">MLPDataFile.mqh</a></li>
+</ul>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -156,9 +160,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af77a6eb7f8f3cf645cc665854c397568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_m_l_p_data_file.html#af77a6eb7f8f3cf645cc665854c397568">initRead0</a> (const string file, int &amp;nin, int &amp;nout)</td></tr>
 <tr class="separator:af77a6eb7f8f3cf645cc665854c397568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>MLPDataFile = CSV in a binary format. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab65aee9e9f197c223827f94f3d422419"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab65aee9e9f197c223827f94f3d422419">&#9670;&nbsp;</a></span>CMLPDataFile()</h2>
 
@@ -286,7 +288,6 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>FileWriteArray not support CSV </p>
 
 </div>
 </div>
@@ -338,6 +339,15 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>number of file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nout</td><td>NOut </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -380,6 +390,15 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>path of file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nout</td><td>NOut </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -414,6 +433,15 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>number of file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nout</td><td>NOut </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -448,6 +476,15 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>number of file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nout</td><td>NOut </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -488,6 +525,16 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>number of file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nout</td><td>NOut </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_header</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -536,6 +583,16 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>path of file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nout</td><td>NOut </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_header</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -570,6 +627,15 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>number of file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nout</td><td>NOut </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -610,6 +676,16 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">file</td><td>number of file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nin</td><td>NIn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nout</td><td>NOut </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_header</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>handleFile </dd></dl>
 
 </div>
 </div>
@@ -638,6 +714,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Number of elements read. </dd></dl>
 
 </div>
 </div>
@@ -666,6 +743,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Number of elements read. </dd></dl>
 
 </div>
 </div>
@@ -684,6 +762,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Number of recorded items. </dd></dl>
 
 </div>
 </div>
@@ -702,6 +781,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Number of recorded items. </dd></dl>
 
 </div>
 </div>
@@ -720,6 +800,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Number of recorded items. </dd></dl>
 
 </div>
 </div>
@@ -766,9 +847,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Include/Roffild/<a class="el" href="_m_l_p_data_file_8mqh.html">MLPDataFile.mqh</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

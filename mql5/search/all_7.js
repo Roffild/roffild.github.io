@@ -1,13 +1,16 @@
 var searchData=
 [
-  ['filename',['filename',['../class_c_csv_file.html#afab320e30cc866280395e0ddde12e184',1,'CCsvFile::filename()'],['../class_c_sql_file.html#a2d7c1d3a2ce526c1151f0f4bb8ecec46',1,'CSqlFile::filename()']]],
-  ['findbar',['findBar',['../class_c_order_data.html#a8c0f1cd41ee8f696b0a6bb4a05825022',1,'COrderData']]],
-  ['firstrecord',['firstrecord',['../class_c_order_sql.html#a99775004f593ab531d28917a57f9f065',1,'COrderSql']]],
-  ['float',['FLOAT',['../class_c_serialization_read.html#a9678ca147529f18e2721cb0a22a9aea2',1,'CSerializationRead']]],
-  ['float_5farray',['FLOAT_ARRAY',['../class_c_serialization_read.html#a1f1c0479d2b847083f66d4ae613cd6f9',1,'CSerializationRead']]],
-  ['flush',['flush',['../class_c_m_l_p_data_file.html#a67b9a0cbd23e949c92d9cf15c568d690',1,'CMLPDataFile::flush()'],['../class_c_to_indicator.html#aef7d8408aebe5c2af77405505764d19a',1,'CToIndicator::flush()']]],
-  ['forestserializer_2emqh',['ForestSerializer.mqh',['../_forest_serializer_8mqh.html',1,'']]],
-  ['framenext',['frameNext',['../class_c_tester_sql.html#a57e7c812d3aaeae4e502c2af76c63994',1,'CTesterSql']]],
-  ['frombinary',['fromBinary',['../class_c_forest_serializer.html#aac39bdb061a6cd03ad50c6d1a74fbe2a',1,'CForestSerializer::fromBinary(CDecisionForest &amp;forest, int hfile)'],['../class_c_forest_serializer.html#a6a594d01e86c4d0a9ec927b3c4caacca',1,'CForestSerializer::fromBinary(CDecisionForest &amp;forest, const string filename, const bool common=true)']]],
-  ['fromtext',['fromText',['../class_c_forest_serializer.html#aa65db1622bb21ad61e7011b79fd3ff84',1,'CForestSerializer::fromText(CDecisionForest &amp;forest, int hfile)'],['../class_c_forest_serializer.html#a986b41351fc944caf597964f8f74b996',1,'CForestSerializer::fromText(CDecisionForest &amp;forest, const string filename, const bool common=true)']]]
+  ['get',['get',['../class_c_array_list.html#ae0248c0019bb0369c23acd8e4dd57ea1',1,'CArrayList::get()'],['../class_c_array_list_class.html#a26ed6598ca2b86d2787f9ff12abecfb7',1,'CArrayListClass::get()'],['../_array_list__macros_8mqh.html#aff4e027910b74e10394b79d5e550d095',1,'get():&#160;ArrayList_macros.mqh']]],
+  ['getcount',['getCount',['../class_c_unit_test.html#a3e8cbdabba426e9b930cd89523d10d85',1,'CUnitTest']]],
+  ['getfilehandle',['getFileHandle',['../class_c_log4_mql_file.html#aa6299306c5d01976144a0a0d0a041d3c',1,'CLog4MqlFile']]],
+  ['getfilename',['getFileName',['../class_c_csv_file.html#a3ea354a3a39c8c4c7eedf881a39f2a1e',1,'CCsvFile::getFileName()'],['../class_c_sql_file.html#a22c5441c699d035d23d1c682750499f7',1,'CSqlFile::getFileName()']]],
+  ['gethandle',['getHandle',['../class_c_csv_file.html#aecb6606a0eb510f7b7b91a24fdca5f10',1,'CCsvFile::getHandle()'],['../class_c_sql_file.html#aa080781bd91481d8f6b0c35c69516e46',1,'CSqlFile::getHandle()']]],
+  ['getlevel',['getLevel',['../class_c_log4_mql.html#a426a8d23cb6e4f31605d89834a9a736c',1,'CLog4Mql']]],
+  ['getmessage',['getMessage',['../class_c_log4_mql.html#aed4b4082423ea6e316c5a5b3961cb9ba',1,'CLog4Mql']]],
+  ['getreserve',['getReserve',['../class_c_array_list.html#acf1bbbaa2818c9144516bc2ef8c9f785',1,'CArrayList::getReserve()'],['../class_c_array_list_class.html#a78535e285dd28da69ade90fea51bedd3',1,'CArrayListClass::getReserve()'],['../_array_list__macros_8mqh.html#a505df02a3e127e6f18878d8b464afa98',1,'getReserve():&#160;ArrayList_macros.mqh']]],
+  ['getschema',['getSchema',['../class_c_csv_file.html#a8cbf9b176867473356b5d975a5569ce9',1,'CCsvFile::getSchema()'],['../class_c_sql_file.html#ace977ba3c49450c8c5b4b48f886a3f38',1,'CSqlFile::getSchema()']]],
+  ['getserialtype',['getSerialType',['../class_c_serialization.html#ada21c2b56f6b6546ea1bb91213779a3b',1,'CSerialization']]],
+  ['getstring',['getString',['../class_c_sql_file.html#a1ad85c704536af66d1afa8c4cb653864',1,'CSqlFile']]],
+  ['gettable',['getTable',['../class_c_csv_file.html#a07598a3337ff7af5fd2b4eda5f8855a1',1,'CCsvFile::getTable()'],['../class_c_sql_file.html#aa6e8d0e581aa648f0c97c99b7f6792a2',1,'CSqlFile::getTable()']]],
+  ['getusedelete',['getUseDelete',['../class_c_array_list_class.html#a923170b63b14f54bc74e3e442bb1c493',1,'CArrayListClass::getUseDelete()'],['../_array_list__macros_8mqh.html#a6eedee244b3f2cf0f392cbfab4f33323',1,'getUseDelete():&#160;ArrayList_macros.mqh']]]
 ];

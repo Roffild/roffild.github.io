@@ -1,14 +1,16 @@
 var searchData=
 [
-  ['warn',['warn',['../class_c_log4_mql.html#a6728010cd103851a00ff5fcf92997f8e',1,'CLog4Mql']]],
-  ['window',['window',['../class_c_to_indicator.html#ac7d1551139c07ebd265f627b8b607f25',1,'CToIndicator']]],
-  ['write',['write',['../class_c_m_l_p_data_file.html#aee9970bde3c263987f6ebc844e5f3745',1,'CMLPDataFile::write(const double &amp;data[])'],['../class_c_m_l_p_data_file.html#a2d61a81060fa5b8e2264bc864fc6b07d',1,'CMLPDataFile::write(const CRowDouble &amp;data)'],['../class_c_m_l_p_data_file.html#adb0ea4917516cb9ab996328a7474fc58',1,'CMLPDataFile::write(const CMatrixDouble &amp;data)']]],
-  ['writearray',['writeArray',['../class_c_serialization.html#a4020167a3025c89f0107d1793c7037a3',1,'CSerialization']]],
-  ['writedouble',['writeDouble',['../class_c_serialization.html#a65c569c689a449e35e60445532eb7880',1,'CSerialization']]],
-  ['writenumber',['writeNumber',['../class_c_serialization.html#adf2173bc3db56c3877ebaf4fd4dfcdef',1,'CSerialization']]],
-  ['writestring',['writeString',['../class_c_serialization.html#a8efd3c0cd146f1597b2efc0b0ada4fde',1,'CSerialization']]],
-  ['writestringarray',['writeStringArray',['../class_c_serialization.html#ade191571a8d151e28c7bf8ab26dcb778',1,'CSerialization']]],
-  ['writestruct',['writeStruct',['../class_c_serialization.html#a5a11ba111e54aca695e20c18fac828bc',1,'CSerialization']]],
-  ['writestructarray',['writeStructArray',['../class_c_serialization.html#a4fb56e43fefcb0a62f83542fb8712773',1,'CSerialization']]],
-  ['writetype',['writeType',['../class_c_serialization.html#a2d03c0f0544a6771242f083a81161d83',1,'CSerialization']]]
+  ['_7ecarraylistclass',['~CArrayListClass',['../class_c_array_list_class.html#aa0b8adaa3ca993729d271c2d42f9d6c8',1,'CArrayListClass']]],
+  ['_7ecarraylistclass_5f',['~CArrayListClass_',['../_array_list__macros_8mqh.html#aa18aba905fdb744a14f3f6d9849720ad',1,'ArrayList_macros.mqh']]],
+  ['_7eccsvfile',['~CCsvFile',['../class_c_csv_file.html#abed45b3dd86d92754752c31831e61c44',1,'CCsvFile']]],
+  ['_7eclog4mql',['~CLog4Mql',['../class_c_log4_mql.html#a86aba54724f358bf0cd83883cc47fc72',1,'CLog4Mql']]],
+  ['_7eclog4mqlfile',['~CLog4MqlFile',['../class_c_log4_mql_file.html#a47538ca9b06b9d64be4a7fedb15428d9',1,'CLog4MqlFile']]],
+  ['_7ecmlpdatafile',['~CMLPDataFile',['../class_c_m_l_p_data_file.html#afb594afdee87afbbeef81ee7563aa88e',1,'CMLPDataFile']]],
+  ['_7ecorderdata',['~COrderData',['../class_c_order_data.html#a783d8643c4033c7840285da565a4304d',1,'COrderData']]],
+  ['_7ecordersql',['~COrderSql',['../class_c_order_sql.html#a3a48e10c289af1b245c9b129ffd9ade4',1,'COrderSql']]],
+  ['_7ecordersqlobject',['~COrderSqlObject',['../class_c_order_sql_object.html#a186ba8e6af7181d0bc29811088b9fbe7',1,'COrderSqlObject']]],
+  ['_7ecserialization',['~CSerialization',['../class_c_serialization.html#ae622c7525421bb9f10de0c809e233385',1,'CSerialization']]],
+  ['_7ecsqlfile',['~CSqlFile',['../class_c_sql_file.html#a2e89a5f8da4e3b668af83faef290e583',1,'CSqlFile']]],
+  ['_7ecstatistic',['~CStatistic',['../class_c_statistic.html#a4339d90a0136117a89898bf48ca36429',1,'CStatistic']]],
+  ['_7ectoindicator',['~CToIndicator',['../class_c_to_indicator.html#a238f9bb70b7dc502ba6e230bf7f3d9b2',1,'CToIndicator']]]
 ];

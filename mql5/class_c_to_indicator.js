@@ -3,7 +3,7 @@ var class_c_to_indicator =
     [ "CToIndicator", "class_c_to_indicator.html#ae98dae15868e81eb17e48894c99d58b4", null ],
     [ "~CToIndicator", "class_c_to_indicator.html#a238f9bb70b7dc502ba6e230bf7f3d9b2", null ],
     [ "addPlot", "class_c_to_indicator.html#a4a377c3d7d7083a6361f0e34cd606ca2", null ],
-    [ "buffer", "class_c_to_indicator.html#aec3f8cf76b5819f95e4e21267e76cd44", null ],
+    [ "buffer", "class_c_to_indicator.html#a38e7e28c1bd127241012e4cd5c007586", null ],
     [ "close", "class_c_to_indicator.html#afc49f42836eebd9a76ee99caa3845d00", null ],
     [ "flush", "class_c_to_indicator.html#aef7d8408aebe5c2af77405505764d19a", null ],
     [ "indicatorSetDouble", "class_c_to_indicator.html#abf1209c8ef040dfd5acb16514c8fba5f", null ],

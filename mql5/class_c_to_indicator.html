@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
@@ -23,13 +23,14 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<a href="https://github.com/Roffild/RoffildLibrary/" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Roffild&#39;s Library
+   <div id="projectname"><a href="https://roffild.com/" target="_blank">Roffild&#39;s Library</a>
    </div>
    <div id="projectbrief">Library for MQL5 (MetaTrader) with support for Spark</div>
   </td>
@@ -94,6 +95,12 @@ $(document).ready(function(){initNavTree('class_c_to_indicator.html','');});
 <div class="title">CToIndicator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Displaying data from Expert or Script using functions for indicators. </p>
+<p>Example: <a href="https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5">https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5</a> </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Include/Roffild/<a class="el" href="_to_indicator_8mqh.html">ToIndicator.mqh</a></li>
+</ul>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -102,13 +109,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a238f9bb70b7dc502ba6e230bf7f3d9b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#a238f9bb70b7dc502ba6e230bf7f3d9b2">~CToIndicator</a> ()</td></tr>
 <tr class="separator:a238f9bb70b7dc502ba6e230bf7f3d9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9576f047fc03022add2ca56103b4b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#a3c9576f047fc03022add2ca56103b4b7">init</a> (const string _id, const bool _window=false, const bool ignore_visual=false)</td></tr>
+<tr class="memdesc:a3c9576f047fc03022add2ca56103b4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">(First) Creating an indicator file.  <a href="#a3c9576f047fc03022add2ca56103b4b7">More...</a><br /></td></tr>
 <tr class="separator:a3c9576f047fc03022add2ca56103b4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272063658b5fd2c69b1e4d88c88ed66c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#a272063658b5fd2c69b1e4d88c88ed66c">show</a> ()</td></tr>
+<tr class="memdesc:a272063658b5fd2c69b1e4d88c88ed66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the indicator on the graph.  <a href="#a272063658b5fd2c69b1e4d88c88ed66c">More...</a><br /></td></tr>
 <tr class="separator:a272063658b5fd2c69b1e4d88c88ed66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a377c3d7d7083a6361f0e34cd606ca2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#a4a377c3d7d7083a6361f0e34cd606ca2">addPlot</a> (ENUM_DRAW_TYPE type, string name, double empty_value=0)</td></tr>
+<tr class="memdesc:a4a377c3d7d7083a6361f0e34cd606ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Second) Add plot to indicator.  <a href="#a4a377c3d7d7083a6361f0e34cd606ca2">More...</a><br /></td></tr>
 <tr class="separator:a4a377c3d7d7083a6361f0e34cd606ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3f8cf76b5819f95e4e21267e76cd44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#aec3f8cf76b5819f95e4e21267e76cd44">buffer</a> (double number, ushort plot, uchar color_index=0, char buffer=-1, datetime time=0)</td></tr>
-<tr class="separator:aec3f8cf76b5819f95e4e21267e76cd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e7e28c1bd127241012e4cd5c007586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#a38e7e28c1bd127241012e4cd5c007586">buffer</a> (double value, ushort plot, uchar color_index=0, char buffer=-1, datetime time=0)</td></tr>
+<tr class="memdesc:a38e7e28c1bd127241012e4cd5c007586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigning a value to the indicator's buffer.  <a href="#a38e7e28c1bd127241012e4cd5c007586">More...</a><br /></td></tr>
+<tr class="separator:a38e7e28c1bd127241012e4cd5c007586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef7d8408aebe5c2af77405505764d19a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#aef7d8408aebe5c2af77405505764d19a">flush</a> ()</td></tr>
 <tr class="separator:aef7d8408aebe5c2af77405505764d19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc49f42836eebd9a76ee99caa3845d00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_to_indicator.html#afc49f42836eebd9a76ee99caa3845d00">close</a> ()</td></tr>
@@ -213,10 +224,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>(Second) Add plot to indicator. </p>
+
 </div>
 </div>
-<a id="aec3f8cf76b5819f95e4e21267e76cd44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3f8cf76b5819f95e4e21267e76cd44">&#9670;&nbsp;</a></span>buffer()</h2>
+<a id="a38e7e28c1bd127241012e4cd5c007586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e7e28c1bd127241012e4cd5c007586">&#9670;&nbsp;</a></span>buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +238,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">void CToIndicator::buffer </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>number</em>, </td>
+          <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -258,6 +271,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Assigning a value to the indicator's buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td></td></tr>
+    <tr><td class="paramname">plot</td><td>index of plot </td></tr>
+    <tr><td class="paramname">color_index</td><td>index of color </td></tr>
+    <tr><td class="paramname">buffer</td><td>index of buffer (-1 = the rules for assigning values depend on the type of the plot) </td></tr>
+    <tr><td class="paramname">time</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -513,6 +538,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>(First) Creating an indicator file. </p>
+
 </div>
 </div>
 <a id="a9302f041792a685ff84d9c31c544fe33"></a>
@@ -672,6 +699,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Show the indicator on the graph. </p>
+<p>It is recommended to call at the end of testing, but you can not use it in OnDeinit(). </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -731,9 +761,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Include/Roffild/<a class="el" href="_to_indicator_8mqh.html">ToIndicator.mqh</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

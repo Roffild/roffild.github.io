@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['123',['123',['../group___o_r_d.html',1,'']]]
+  ['_5fcunittest_5ffunc',['_CUnitTest_FUNC',['../_unit_test_8mqh.html#a323929d5d48a91731184b3c2034f2853',1,'UnitTest.mqh']]],
+  ['_5fcunittest_5frun',['_CUnitTest_RUN',['../_unit_test_8mqh.html#a949e08fcddd88f542bc770a78e08b167',1,'UnitTest.mqh']]],
+  ['_5flgdebug',['_lgDebug',['../_log4_m_q_l_8mqh.html#a59cf33adf89e624cf68ec1eab92a1ecd',1,'Log4MQL.mqh']]],
+  ['_5flgerror',['_lgError',['../_log4_m_q_l_8mqh.html#aa09ecfbaeee8ae41bc5ce8e9d5df11c1',1,'Log4MQL.mqh']]],
+  ['_5flginfo',['_lgInfo',['../_log4_m_q_l_8mqh.html#ad8f25eb7fa47abd7ae0a1d6fc020a520',1,'Log4MQL.mqh']]],
+  ['_5flgtrace',['_lgTrace',['../_log4_m_q_l_8mqh.html#ad144c9f29db883af360fb8e9c7f1f977',1,'Log4MQL.mqh']]],
+  ['_5flgwarn',['_lgWarn',['../_log4_m_q_l_8mqh.html#ae87856250ee6463fd4e4abe3f0505375',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg1',['_LOG_ARG1',['../_log4_m_q_l_8mqh.html#abaa659c9cb067db43eafd43747527154',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg2',['_LOG_ARG2',['../_log4_m_q_l_8mqh.html#a008a08f928098aacfb1b3e84aa139049',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg3',['_LOG_ARG3',['../_log4_m_q_l_8mqh.html#a594f66a7953732c768a1314acd822cd6',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg4',['_LOG_ARG4',['../_log4_m_q_l_8mqh.html#a94564360a376ba5b69ecd49adcec1ecf',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg5',['_LOG_ARG5',['../_log4_m_q_l_8mqh.html#acaf52331d985941be50206db6446852b',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg6',['_LOG_ARG6',['../_log4_m_q_l_8mqh.html#a48ddf99912737b67337452e1bdfb92e3',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg7',['_LOG_ARG7',['../_log4_m_q_l_8mqh.html#a539ff3ee446c21ae14b07375717cb271',1,'Log4MQL.mqh']]],
+  ['_5flog_5farg8',['_LOG_ARG8',['../_log4_m_q_l_8mqh.html#ab604f76eb4664e8d18ebb10ab7356ffe',1,'Log4MQL.mqh']]],
+  ['_5flog_5fclass',['_LOG_CLASS',['../_log4_m_q_l_8mqh.html#a11bcb337becb0433eec894b234b90d40',1,'_LOG_CLASS():&#160;Log4MQL.mqh'],['../_log4_m_q_l__tofile_8mqh.html#a11bcb337becb0433eec894b234b90d40',1,'_LOG_CLASS():&#160;Log4MQL_tofile.mqh']]]
 ];

@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
@@ -23,13 +23,14 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<a href="https://github.com/Roffild/RoffildLibrary/" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Roffild&#39;s Library
+   <div id="projectname"><a href="https://roffild.com/" target="_blank">Roffild&#39;s Library</a>
    </div>
    <div id="projectbrief">Library for MQL5 (MetaTrader) with support for Spark</div>
   </td>
@@ -100,17 +101,22 @@ Inheritance diagram for COrderSqlObjectCast:</div>
  <div class="center">
   <img src="class_c_order_sql_object_cast.png" usemap="#COrderSqlObjectCast_map" alt=""/>
   <map id="COrderSqlObjectCast_map" name="COrderSqlObjectCast_map">
-<area href="class_c_sql_object.html" alt="CSqlObject" shape="rect" coords="0,0,134,24"/>
+<area href="class_c_sql_object.html" title="A base class for generating data as an array. " alt="CSqlObject" shape="rect" coords="0,0,134,24"/>
 </map>
  </div></div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Include/Roffild/<a class="el" href="_order_sql_8mqh.html">OrderSql.mqh</a></li>
+</ul>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa1b2e3251684b9f7c160ae28173ab189"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_order_sql_object_cast.html#aa1b2e3251684b9f7c160ae28173ab189">COrderSqlObjectCast</a> (<a class="el" href="class_c_order_sql_object.html">COrderSqlObject</a> *_object)</td></tr>
 <tr class="separator:aa1b2e3251684b9f7c160ae28173ab189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfc3d3ba8cb86195f3644e7d5a49d4ce"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_order_sql_object_cast.html#acfc3d3ba8cb86195f3644e7d5a49d4ce">toSqlTable</a> (string &amp;types[][2], string &amp;primaryKeys[])</td></tr>
+<tr class="memdesc:acfc3d3ba8cb86195f3644e7d5a49d4ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a table.  <a href="#acfc3d3ba8cb86195f3644e7d5a49d4ce">More...</a><br /></td></tr>
 <tr class="separator:acfc3d3ba8cb86195f3644e7d5a49d4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ed15ad27207ae9a7f709b8caf6dd538"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_order_sql_object_cast.html#a7ed15ad27207ae9a7f709b8caf6dd538">toSqlRecord</a> (string &amp;list[][2])</td></tr>
+<tr class="memdesc:a7ed15ad27207ae9a7f709b8caf6dd538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forming data for writing to a table.  <a href="#a7ed15ad27207ae9a7f709b8caf6dd538">More...</a><br /></td></tr>
 <tr class="separator:a7ed15ad27207ae9a7f709b8caf6dd538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -162,6 +168,15 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Forming data for writing to a table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">list</td><td>[x][0] = name, [x][1] = data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is formed, and otherwise False. </dd></dl>
+
 <p>Reimplemented from <a class="el" href="class_c_sql_object.html#ad993b1059a70b0582898879a0d96410b">CSqlObject</a>.</p>
 
 </div>
@@ -200,6 +215,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Create a table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">types</td><td>[x][0] = name, [x][1] = type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">primaryKeys</td><td><a href="https://en.wikipedia.org/wiki/Primary_key">https://en.wikipedia.org/wiki/Primary_key</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is formed, and otherwise False. </dd></dl>
+
 <p>Reimplemented from <a class="el" href="class_c_sql_object.html#a730f0e071020d2bf38dd5159d319c804">CSqlObject</a>.</p>
 
 </div>
@@ -219,9 +244,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Include/Roffild/<a class="el" href="_order_sql_8mqh.html">OrderSql.mqh</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

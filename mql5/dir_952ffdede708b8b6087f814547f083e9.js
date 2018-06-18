@@ -18,7 +18,10 @@ var dir_952ffdede708b8b6087f814547f083e9 =
     [ "MLPDataFile.mqh", "_m_l_p_data_file_8mqh.html", [
       [ "CMLPDataFile", "class_c_m_l_p_data_file.html", "class_c_m_l_p_data_file" ]
     ] ],
-    [ "OrderData.mqh", "_order_data_8mqh.html", null ],
+    [ "OrderData.mqh", "_order_data_8mqh.html", [
+      [ "COrderDataObject", "class_c_order_data_object.html", "class_c_order_data_object" ],
+      [ "COrderData", "class_c_order_data.html", "class_c_order_data" ]
+    ] ],
     [ "OrderSql.mqh", "_order_sql_8mqh.html", [
       [ "COrderSqlObject", "class_c_order_sql_object.html", "class_c_order_sql_object" ],
       [ "COrderSqlObjectCast", "class_c_order_sql_object_cast.html", "class_c_order_sql_object_cast" ],
