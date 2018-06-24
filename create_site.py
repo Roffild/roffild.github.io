@@ -6,6 +6,7 @@ def readme(fromf, tof):
     with open(fromf, 'r', encoding='utf-8-sig') as org:
         with open(tof, 'w+', encoding='utf-8-sig') as md:
             md.write('{% include google.html %}{% include header.html %}\n')
+            org.readline()
             for line in org:
                 md.write(line.replace('](', '](' + url).replace(url + 'http', 'http'))
             md.write('\n[English](https://roffild.com/), [Russian](https://roffild.com/index_ru.html)\n')

@@ -1,5 +1,4 @@
 ﻿{% include google.html %}{% include header.html %}
-# Roffild's Library
 
 I am known to the MQL5 community by the name of Roffild and this is my open source library for MQL5.
 An attempt to implement the features on MQL5, which have long become the standard for popular programming languages.
