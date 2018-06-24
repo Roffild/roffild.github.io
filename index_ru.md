@@ -1,5 +1,5 @@
-﻿# Библиотека Roffild'a
-{% include header.html %}
+﻿{% include google.html %}{% include header.html %}
+# Библиотека Roffild'a
 
 Я известен сообществу программистов на MQL5 по ником Roffild и это моя библиотека с открытым кодом для MQL5. Попытка реализовать возможности на MQL5, которые уже давно стали стандартом для популярных языков программирования. В каждом файле реализована одна идея. Библиотека пополняется по мере необходимости в новых возможностях.
 
@@ -37,7 +37,7 @@ MetaEditor может сохранять код в UTF-16, но кодировк
   * [ArrayList.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayList.mqh) - ArrayList из Java.
   * [ArrayListClass.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayListClass.mqh) - ArrayList из Java только для Класса.
   * [ForestSerializer.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ForestSerializer.mqh) - Сохранение и загрузка данных для класса CDecisionForest (Alglib).
-  * [Log4MQL.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL.mqh) и [Log4MQL_tofile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL_tofile.mqh) + [модуль](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/LogMX) ([скачать](https://roffild.com/Log4MQLParser.zip)) для [LogMX](http://www.logmx.com/)
+  * [Log4MQL.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL.mqh) и [Log4MQL_tofile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL_tofile.mqh) + [модуль](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/LogMX) ([скачать](https://roffild.com/Log4MQLParser.zip)) для [LogMX](http://www.logmx.com/) - Logger for MQL5 (Log4MQL).
   * [OrderData.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderData.mqh) - Симуляция ордеров с прикреплёнными данными для исследований.
     * [OrderSql.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderSql.mqh) - Запись данных от ордеров (COrderData) в файл формата MySQL.
   * [SqlFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/SqlFile.mqh) - Запись данных в файл формата MySQL.
@@ -88,3 +88,5 @@ Column limit = 110
 ## License
 
 [Apache License 2.0](https://github.com/Roffild/RoffildLibrary/blob/master/LICENSE)
+
+[English](https://roffild.com/), [Russian](https://roffild.com/index_ru.html)

@@ -1,5 +1,5 @@
-﻿# Roffild's Library
-{% include header.html %}
+﻿{% include google.html %}{% include header.html %}
+# Roffild's Library
 
 I am known to the MQL5 community by the name of Roffild and this is my open source library for MQL5.
 An attempt to implement the features on MQL5, which have long become the standard for popular programming languages.
@@ -46,7 +46,7 @@ This library can be divided into interests:
   * [ArrayList.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayList.mqh) - ArrayList from Java.
   * [ArrayListClass.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayListClass.mqh) - ArrayList from Java for Class only.
   * [ForestSerializer.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ForestSerializer.mqh) - Save and load data for the class CDecisionForest (Alglib).
-  * [Log4MQL.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL.mqh) and [Log4MQL_tofile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL_tofile.mqh) + [module](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/LogMX) ([download](https://roffild.com/Log4MQLParser.zip)) for [LogMX](http://www.logmx.com/)
+  * [Log4MQL.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL.mqh) and [Log4MQL_tofile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL_tofile.mqh) + [module](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/LogMX) ([download](https://roffild.com/Log4MQLParser.zip)) for [LogMX](http://www.logmx.com/) - Logger for MQL5 (Log4MQL).
   * [OrderData.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderData.mqh) - Simulation of orders with attached data for research.
     * [OrderSql.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderSql.mqh) - Record data of simulated orders (COrderData) in a file format MySQL.
   * [SqlFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/SqlFile.mqh) - Write data to a file format MySQL.
@@ -98,4 +98,4 @@ Column limit = 110
 
 [Apache License 2.0](https://github.com/Roffild/RoffildLibrary/blob/master/LICENSE)
 
-[Russian](https://roffild.com/index_ru.html)
+[English](https://roffild.com/), [Russian](https://roffild.com/index_ru.html)
