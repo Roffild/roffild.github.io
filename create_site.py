@@ -18,7 +18,7 @@ with open('../RoffildLibrary/README_ru.md', 'r', encoding='utf-8') as org:
             md.write(line.replace('](', '](' + url).replace(url + 'http', 'http'))
 
 def gettime(filename):
-    return datetime.utcfromtimestamp(os.path.getmtime(filename)).isoformat()
+    return datetime.utcfromtimestamp(os.path.getmtime(filename)).isoformat(timespec='seconds')
 
 url = 'https://roffild.com/'
 with open('sitemap.xml', 'w', encoding='utf-8') as sm:
