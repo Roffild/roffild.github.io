@@ -15,14 +15,15 @@ readme('../RoffildLibrary/README.md', 'index.md')
 readme('../RoffildLibrary/README_ru.md', 'index_ru.md')
 
 def gettime(filename):
-    return datetime.utcfromtimestamp(os.path.getmtime(filename)).isoformat(timespec='seconds') + '+03:00'
+    return datetime.utcfromtimestamp(os.path.getmtime(filename)).isoformat(timespec='seconds') + '+00:00'
 
 url = 'https://roffild.com/'
 with open('sitemap.xml', 'w', encoding='utf-8') as sm:
     sm.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     sm.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
     sm.write('<url><loc>' + url + '</loc><lastmod>' + gettime('index.md') + '</lastmod><priority>1.00</priority></url>\n')
-    sm.write('<url><loc>' + url + 'index_ru.md</loc><lastmod>' + gettime('index_ru.md') + '</lastmod><priority>1.00</priority></url>\n')
+    sm.write('<url><loc>' + url + 'index.html</loc><lastmod>' + gettime('index.md') + '</lastmod><priority>1.00</priority></url>\n')
+    sm.write('<url><loc>' + url + 'index_ru.html</loc><lastmod>' + gettime('index_ru.md') + '</lastmod><priority>1.00</priority></url>\n')
     for root, folder, name in os.walk('mql5'):
         purl= url + root.replace('\\', '/') + '/'
         for fl in name:
