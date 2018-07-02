@@ -1,7 +1,7 @@
 # Site settings
 title: "Roffild’s Library"
 name: "Roffild’s Library"
-url: "https://github.com/Roffild/RoffildLibrary/"
+url: "https://roffild.com"
 
 include:
   - _*.*
