@@ -19,6 +19,6 @@ markdown: kramdown
 defaults:
   -
     scope:
-      path: *_ru.*
+      path: "*_ru.*"
     values:
       lang: ru
