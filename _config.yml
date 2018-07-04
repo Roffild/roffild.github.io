@@ -19,6 +19,6 @@ markdown: kramdown
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: *_ru.*
     values:
-      layout: "default"
+      lang: ru
