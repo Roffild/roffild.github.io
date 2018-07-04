@@ -1,11 +1,20 @@
 ﻿<!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ seo_tag.page_lang | replace:'-','_' }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
     {% seo %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121315607-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121315607-1');
+</script>
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
@@ -13,7 +22,7 @@
 
       
       <!-- h1><a href="https://roffild.com/">Roffild’s Library for MQL5 (MetaTrader) with Java, Apache Spark, AWS</a></h1 -->
-      <h1>{{ site.title }}</h1>
+      <h1>{{ page.title }}</h1>
       
       {{ content }}
     </div>
