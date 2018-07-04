@@ -1,7 +1,9 @@
 # Site settings
-title: "Roffild’s Library for MQL5 (MetaTrader) with Java, Apache Spark, AWS"
-name: "Roffild’s Library"
-url: "https://roffild.com"
+lang: en
+title: Roffild’s Library for MQL5 (MetaTrader) with Java, Apache Spark, AWS
+name: Roffild’s Library
+url: https://roffild.com
+google: UA-121315607-1
 
 include:
   - _*.*
