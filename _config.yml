@@ -1,7 +1,5 @@
 # Site settings
-lang: en
 title: Roffild’s Library for MQL5 (MetaTrader) with Java, Apache Spark, AWS
-description: Transform your plain text into static websites and blogs
 name: Roffild’s Library
 url: https://roffild.com
 
@@ -19,6 +17,13 @@ markdown: kramdown
 defaults:
   -
     scope:
+      path: ""
+    values:
+      lang: en
+      description: Transform your plain text into static websites and blogs
+  -
+    scope:
       path: "*_ru.*"
     values:
       lang: ru
+      description: русский текст
