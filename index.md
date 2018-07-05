@@ -1,6 +1,7 @@
 ﻿---
-title: roffild
+title: Roffild's Library
 ---
+
 I am known to the MQL5 community by the name of Roffild and this is my open source library for MQL5.
 An attempt to implement the features on MQL5, which have long become the standard for popular programming languages.
 Each file has one idea. The library is replenished as needed for new capabilities.
@@ -100,4 +101,4 @@ Column limit = 110
 
 [Apache License 2.0](https://github.com/Roffild/RoffildLibrary/blob/master/LICENSE)
 
-[English](https://roffild.com/), [Russian](https://roffild.com/index_ru.html)
+[English](https://roffild.com/), [Russian](https://roffild.com/ru/)

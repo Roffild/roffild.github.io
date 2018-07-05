@@ -20,10 +20,10 @@ defaults:
       path: ""
     values:
       lang: en
-      description: Transform your plain text into static websites and blogs
+      description: An attempt to implement the features on MQL5, which have long become the standard for popular programming languages.
   -
     scope:
-      path: "*_ru.*"
+      path: "/ru/*"
     values:
       lang: ru
-      description: русский текст
+      description: Попытка реализовать возможности на MQL5, которые уже давно стали стандартом для популярных языков программирования.

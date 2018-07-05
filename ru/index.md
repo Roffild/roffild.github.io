@@ -1,9 +1,8 @@
 ﻿---
-layout: default
 title: Библиотека Roffild'a
 ---
 
-Я известен сообществу программистов на MQL5 по ником Roffild и это моя библиотека с открытым кодом для MQL5. Попытка реализовать возможности на MQL5, которые уже давно стали стандартом для популярных языков программирования. В каждом файле реализована одна идея. Библиотека пополняется по мере необходимости в новых возможностях.
+Я известен сообществу программистов на MQL5 под ником Roffild и это моя библиотека с открытым кодом для MQL5. Попытка реализовать возможности на MQL5, которые уже давно стали стандартом для популярных языков программирования. В каждом файле реализована одна идея. Библиотека пополняется по мере необходимости в новых возможностях.
 
 Мало кто пытался выложить проект в Github. Единого стандарта нет. MetaQuotes не учитывают использование системы контроля версий при создании проекта. Почему-то программисты из MetaQuotes считают, что проект должен быть одного типа. Для мелких проектов, которые публикуются в CodeBase на сайте MQL5.com, такое разделение обосновано. Для средних и крупных проектов невозможно выбрать один тип проекта.
 
@@ -23,7 +22,7 @@ MQL5 является частью торговой платформы MetaTrade
 [Java](https://roffild.com/java/)
 
 ### Ссылки
-[Roffild.com](https://roffild.com/)<br/>
+[Roffild.com](https://roffild.com/ru/)<br/>
 [Github](https://github.com/Roffild/RoffildLibrary)<br/>
 [MQL5.com: topic for discussion in English](https://www.mql5.com/en/forum/247134)<br/>
 [MQL5.com: тема для обсуждения на Русском](https://www.mql5.com/ru/forum/245373)
@@ -93,4 +92,4 @@ Column limit = 110
 
 [Apache License 2.0](https://github.com/Roffild/RoffildLibrary/blob/master/LICENSE)
 
-[English](https://roffild.com/), [Russian](https://roffild.com/index_ru.html)
+[English](https://roffild.com/), [Russian](https://roffild.com/ru/)
