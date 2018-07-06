@@ -92,4 +92,4 @@ Column limit = 110
 
 [Apache License 2.0](https://github.com/Roffild/RoffildLibrary/blob/master/LICENSE)
 
-[English](https://roffild.com/), [Russian](https://roffild.com/ru/)
+<a href="https://roffild.com/" hreflang="en">English</a>, <a href="https://roffild.com/ru/" hreflang="ru">Russian</a>

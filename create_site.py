@@ -10,7 +10,7 @@ def readme(fromf, tof):
             md.write('---\n')
             for line in org:
                 md.write(line.replace('](', '](' + url).replace(url + 'http', 'http'))
-            md.write('\n[English](https://roffild.com/), [Russian](https://roffild.com/ru/)\n')
+            md.write('\n<a href="https://roffild.com/" hreflang="en">English</a>, <a href="https://roffild.com/ru/" hreflang="ru">Russian</a>\n')
 
 readme('../RoffildLibrary/README.md', 'index.md')
 readme('../RoffildLibrary/README_ru.md', 'ru/index.md')
