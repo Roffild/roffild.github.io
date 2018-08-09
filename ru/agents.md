@@ -31,12 +31,12 @@ title: Библиотека Roffild'a
 Если инстанс имеет встроенное дисковое пространство, то количество гигабайтов для EBS задать можно минимум (оплачивается отдельно). (картинка)
 Я обычно выбираю инстанс SS8(название) с встроенным SSD на (ГБ). На него часто большая скидка, потому что этот инстанс прошлого поколения, но для агентов тестирования он отлично подходит. (картинка) 
 
-Открываем [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh) и вставляем содержимое в "User data".
-![User data](/images/agent-userdata.png)
-Hours=1 - ограничивает работу инстанса по количеству часов, потому что оплата почасовая.
-agentStartPort=5000 - начальный порт для 1-ого агента.
-agentPassword=amazon99 - пароль для доступа к агентам.
-bucket= - название корзины, где находятся необходимые для теста файлы.
+Открываем [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh){:target="_blank"} и вставляем содержимое в "User data".
+![User data](/images/agent-userdata.png)<br/>
+Hours=1 - ограничивает работу инстанса по количеству часов, потому что оплата почасовая.<br/>
+agentStartPort=5000 - начальный порт для 1-ого агента.<br/>
+agentPassword=amazon99 - пароль для доступа к агентам.<br/>
+bucket= - название корзины, где находятся необходимые для теста файлы.<br/>
 Если роль не задана, то придётся указать ключи доступа, чтобы скачать файлы из корзины S3.
 
 Параметр (час) ограничивает работу инстанса по количеству часов, потому что оплата почасовая.
