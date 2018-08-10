@@ -33,12 +33,12 @@ cc2.8xlarge идеально подходит для агентов тестир
 (здесь картинка с правилами для портов)
 
 Нужно создать Роль с правами доступа в корзину S3.
-1) [Перейти в раздел управления Ролями](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles) и нажать на синюю кнопку "Create role".
-2) Выбрать сервис EC2 и нажать на синюю кнопку "Next".
+1. [Перейти в раздел управления Ролями](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles) и нажать на синюю кнопку "Create role".
+2. Выбрать сервис EC2 и нажать на синюю кнопку "Next".<br/>
 ![ubuntu](/images/agent-create-role-1.png)
-3) Скрипт для запуска Агентов только скачивает файлы из корзины S3, поэтому достаточно выбрать "AmazonS3ReadOnlyAccess" и нажать на синюю кнопку "Next".
+3. Скрипт для запуска Агентов только скачивает файлы из корзины S3, поэтому достаточно выбрать "AmazonS3ReadOnlyAccess" и нажать на синюю кнопку "Next".<br/>
 ![ubuntu](/images/agent-create-role-2.png)
-4) Теперь нужно задать имя Роли и нажать на синюю кнопку "Create role".
+4. Теперь нужно задать имя Роли и нажать на синюю кнопку "Create role".<br/>
 ![ubuntu](/images/agent-create-role-3.png)
 
 Можно создать ключи доступа для использования программ по закачке файлов в корзину S3. Эти ключи также позволяют получать спот-цены со всех регионов в [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils). Забытые ключи доступа в исходных кодах могут [доставить неприятности](https://habr.com/post/357764/).
