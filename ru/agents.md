@@ -43,30 +43,31 @@ cc2.8xlarge идеально подходит для агентов тестир
 4. Теперь нужно задать имя Роли и нажать на синюю кнопку "Create role".<br/>
 ![ubuntu](/images/agent-create-role-3.png)
 
-Можно создать ключи доступа для использования программ по закачке файлов в корзину S3. Эти ключи также позволяют получать спот-цены со всех регионов в [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils). Забытые ключи доступа в исходных кодах могут [доставить неприятности](https://habr.com/post/357764/).
+Можно создать ключи доступа для использования программ по закачке файлов в корзину S3. Эти ключи также позволяют получать спот-цены со всех регионов в [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils){:target="_blank"}. Забытые ключи доступа в исходных кодах могут [доставить неприятности](https://habr.com/post/357764/){:target="_blank"}.
 
 ## Закачка файлов в S3
 Сначала нужно создать корзину на S3 создать папку (МК) и закачать в неё metatester64.exe
 Если нужно использовать файлы из папки (файлскомон), то нужно их закачать в (путь указать)
 
+## Заказ сервера для Агентов
+В разделе [Spot Requests](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} нажать на синюю кнопку "Request Spot Instances".
 
-В разделе спотинстанс (картинка) нажать на кнопку (название синей кнопки).
 Созданный мною скрипт для запуска Агентов расчитан на Ubuntu.<br/>
-![ubuntu](/images/agent-ubuntu.png)
+![Ubuntu](/images/agent-ubuntu.png)
 
-Я обычно выбираю инстанс cc2.8xlarge со встроенным SSD на 840GB. На него часто большая скидка, потому что этот инстанс прошлого поколения, но для агентов тестирования он отлично подходит.<br/>
-![Spot Prices](/images/agent-instance-type.png)
+Я обычно выбираю cc2.8xlarge со встроенным SSD на 840GB. На него часто большая скидка, потому что этот инстанс прошлого поколения, но для агентов тестирования он отлично подходит.<br/>
+![Instance Type](/images/agent-instance-type.png)
 
 Если инстанс имеет встроенное дисковое пространство, то количество гигабайтов для EBS задать можно минимум (оплачивается отдельно).<br/>
-![Spot Prices](/images/agent-ebs.png)<br/>
+![EBS](/images/agent-ebs.png)<br/>
 Все Агенты запускаются в "/mnt". Первый раздел встроенного диска автоматически монтируется в эту папку. Если размера первого раздела не хватает, то нужно брать инстанс только с EBS или редактировать скрипт. Добавлять второй раздел не имеет смысла, потому что он будет последним.<br/>
-![Spot Prices](/images/agent-lsblk.png)
+![lsblk](/images/agent-lsblk.png)
 
 Задать правило открытия портов в "Security groups".<br/>
-![ubuntu](/images/agent-security-groups.png)
+![Security groups](/images/agent-security-groups.png)
 
 Если использовать заранее созданную роль в "IAM instance profile", то в скрипте не нужно указывать ключ к Амазону.<br/>
-![ubuntu](/images/agent-iam.png)
+![IAM instance profile](/images/agent-iam.png)
 
 Открываем [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh){:target="_blank"} и вставляем содержимое в "User data".<br/>
 ![User data](/images/agent-userdata.png)
@@ -78,12 +79,14 @@ cc2.8xlarge идеально подходит для агентов тестир
 
 После нажатия на синюю кнопку "Launch" произойдёт запрос на создание инстанса.
 
-Инстанс может быть выдан Амазоном с задержкой, поэтому нужно обновлять страницу пока он не появится в списке "Instances".<br/>
-![ubuntu](/images/agent-instance.png)
+Инстанс может быть выдан Амазоном с задержкой, поэтому нужно обновлять страницу, пока он не появится в списке "Instances".<br/>
+![Instance](/images/agent-instance.png)
 
 После этого можно переходить на страницу инстанса и нажать на серую кнопку "Connect" для получения IP.<br/>
-![ubuntu](/images/agent-ip.png)
+![IP](/images/agent-ip.png)
 
 ## Добавление Агентов в MetaTrader 5
 Теперь можно добавить агенты в список для оптимизации в MetaTrader 5 (картинка)
 Скрипту нужно время (примерно 5 минут) для запуска агентов в Ubuntu. (картинка с работающими агентами)
+
+По всем вопросам обращаться в эту тему.
