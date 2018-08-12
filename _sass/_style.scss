@@ -177,25 +177,25 @@ h6:hover .header-link {
   opacity: 1;
 }
 
-// @media (max-width: 580px) {
+@media (max-width: 580px) {
   header {
     .flexbox { height: auto }
     .logo img { margin-top: 0 }
   }
 }
-// @media (max-width: 699px) {
+@media (max-width: 699px) {
   .searchbox { display: none }
 }
-// @media (max-width: 768px) {
+@media (max-width: 768px) {
   .main-nav ul { text-align: right }
 }
-// @media (max-width: 830px) {
+@media (max-width: 830px) {
   .main-nav {
     .show-on-mobiles { display: inline; }
     .hide-on-mobiles { display: none; }
   }
 }
-// @media (max-width: 890px) {
+@media (max-width: 890px) {
   .meta { display: none; }
 }
 
@@ -233,7 +233,7 @@ footer {
   }
 }
 
-// @media (max-width: 568px) {
+@media (max-width: 568px) {
   footer {
     .one-third p { margin-bottom: 0; }
     .two-thirds p { margin-top: -20px; }
@@ -253,7 +253,7 @@ footer {
   }
 }
 
-// @media (min-width: 569px) {
+@media (min-width: 569px) {
   .intro p { font-size: 3.2em; }
 }
 
@@ -281,7 +281,7 @@ footer {
   }
 }
 
-// @media (min-width: 768px) {
+@media (min-width: 768px) {
   .quickstart {
 
     .code {
@@ -391,7 +391,7 @@ footer {
   p { margin: .75em 0; }
 }
 
-// @media (min-width: 768px) {
+@media (min-width: 768px) {
   .free-hosting {
 
     img {
@@ -434,15 +434,15 @@ article {
   font-size: 16px;
 }
 
-// @media (max-width: 480px) {
+@media (max-width: 480px) {
   article ul { padding-left: 20px; }
 }
 
-// @media (max-width: 568px) {
+@media (max-width: 568px) {
   article { margin: 0; }
 }
 
-// @media (min-width: 768px) {
+@media (min-width: 768px) {
   article {
     padding: 40px 40px 30px;
     font-size: 21px;
@@ -643,11 +643,11 @@ article h2:first-child { margin-top: 0; }
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 }
 
-// @media (max-width: 568px) {
+@media (max-width: 568px) {
   .post-category { padding-left: 30px; }
 }
 
-// @media (min-width: 768px) {
+@media (min-width: 768px) {
   .post-category { margin-left: -50px; }
 }
 
@@ -686,7 +686,7 @@ code {
   padding: 0 0.5em;
 }
 
-// @media (min-width: 768px) {
+@media (min-width: 768px) {
   pre, code { font-size: 16px; }
 }
 
@@ -908,11 +908,11 @@ code.output {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e6d42', endColorstr='#5c4e35',GradientType=0 );
 }
 
-// @media (max-width: 568px) {
+@media (max-width: 568px) {
   .note { margin-right: -30px; }
 }
 
-// @media (min-width: 768px) {
+@media (min-width: 768px) {
   .note { margin-left: -50px; }
 }
 
@@ -1056,7 +1056,7 @@ code.output {
 
 /* Responsive tables */
 
-// @media (max-width: 768px) {
+@media (max-width: 768px) {
   .mobile-side-scroller {
     overflow-x: scroll;
     margin: 0 -40px;
@@ -1069,7 +1069,7 @@ code.output {
   display: none;
 }
 
-// @media screen and (max-width: 568px) {
+@media screen and (max-width: 568px) {
   .show-on-mobiles {
     display: block !important;
   }
