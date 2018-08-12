@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
+    <link rel="stylesheet" href="/css/screen.css">
 {% if page.lang contains "en" %}
 	 <link rel="alternate" hreflang="ru" href="{{ page.url | absolute_url | replace_first: ".com", ".com/ru"}}" />
 {% else %}
@@ -14,10 +15,68 @@
     {% include analytics.html %}
   </head>
   <body>
+<header>
+  <div class="flexbox">
+    <div class="center-on-mobiles">
+      <h1>
+        <a href="/" class="logo">
+          <span class="sr-only">Roffild</span>
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav hide-on-mobiles">
+<ul>
+  <li class="{% if page.overview %}current{% endif %}">
+    <a href="/">Home</a>
+  </li>
+  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+    <a href="/docs/home/">Agents</a>
+  </li>
+  <li class="{% if page.author %}current{% endif %}">
+    <a href="/news/">MQL5Doc</a>
+  </li>
+  <li class="{% if page.url contains '/help/' %}current{% endif %}">
+    <a href="/help/">JavaDoc</a>
+  </li>
+</ul>
+    </nav>
+    <div class="meta hide-on-mobiles">
+      <ul>
+        <li>
+          <a href="{{ site.repository }}">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="mobile-nav show-on-mobiles">
+<ul>
+  <li class="{% if page.overview %}current{% endif %}">
+    <a href="/">Home</a>
+  </li>
+  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+    <a href="/docs/home/">Docs</a>
+  </li>
+  <li class="{% if page.author %}current{% endif %}">
+    <a href="/news/">News</a>
+  </li>
+  <li class="{% if page.url contains '/help/' %}current{% endif %}">
+    <a href="/help/">Help</a>
+  </li>
+  <li>
+    <a href="{{ site.repository }}">GitHub</a>
+  </li>
+</ul>
+  </nav>
+</header>
     <div class="container-lg px-3 my-5 markdown-body">
       <h1><a href="https://github.com/Roffild/RoffildLibrary/" target="_blank">{{ page.title }}</a></h1>
       {{ content }}
 		<a href="https://github.com/Roffild/RoffildLibrary/" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
     </div>
+<footer>
+    <div class="unit one-third center-on-mobiles">
+      <p>The contents of this website are <br />&copy;&nbsp;{{ site.time | date: '%Y' }} under the terms of the <a href="{{ site.repository }}/blob/master/LICENSE">Apache 2.0&nbsp;License</a>.</p>
+    </div>
+</footer>
   </body>
 </html>
