@@ -33,10 +33,10 @@
     <a href="/docs/home/">Agents</a>
   </li>
   <li class="{% if page.author %}current{% endif %}">
-    <a href="/news/">MQL5Doc</a>
+    <a href="/mql5/" target="_blank">MQL5Doc</a>
   </li>
   <li class="{% if page.url contains '/help/' %}current{% endif %}">
-    <a href="/help/">JavaDoc</a>
+    <a href="/java/" target="_blank">JavaDoc</a>
   </li>
 </ul>
     </nav>
@@ -48,25 +48,6 @@
       </ul>
     </div>
   </div>
-  <nav class="mobile-nav show-on-mobiles">
-<ul>
-  <li class="{% if page.overview %}current{% endif %}">
-    <a href="/">Home</a>
-  </li>
-  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
-    <a href="/docs/home/">Docs</a>
-  </li>
-  <li class="{% if page.author %}current{% endif %}">
-    <a href="/news/">News</a>
-  </li>
-  <li class="{% if page.url contains '/help/' %}current{% endif %}">
-    <a href="/help/">Help</a>
-  </li>
-  <li>
-    <a href="{{ site.repository }}">GitHub</a>
-  </li>
-</ul>
-  </nav>
 </header>
     <div class="container-lg px-3 my-5 markdown-body">
       <h1><a href="https://github.com/Roffild/RoffildLibrary/" target="_blank">{{ page.title }}</a></h1>

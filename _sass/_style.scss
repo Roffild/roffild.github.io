@@ -1,19 +1,6 @@
-/* Base */
-
- html {
-   box-sizing: border-box;
- }
-
- *,
- *:before,
- *:after {
-   box-sizing: inherit;
- }
-
 /* Sections */
 
 header,
-section,
 footer {
   float: left;
   width: 100%;
@@ -24,7 +11,6 @@ footer {
 
 header {
   padding: 15px;
-  // background: darken(#333, 3%);
   background-color: #333;
 
   h1,
@@ -39,10 +25,7 @@ header {
 
   .logo {
     display: block;
-    img { margin-top: -7px }
   }
-
-  .search .svg-icons { display: none }
 }
 
 nav, .meta {
@@ -64,16 +47,13 @@ nav, .meta {
 }
 
 .main-nav, .meta {
-
   li {
-
     a {
       // // @include border-radius(5px);
       font-weight: 900;
       font-size: 0.75em;
       padding: 0.5em 1em;
       text-shadow: none;
-      text-transform: uppercase;
       // // @include transition(all .25s);
 
       &:hover {
@@ -84,7 +64,6 @@ nav, .meta {
     }
 
     &.current {
-
       a {
         background-color: #fc0;
         color: #222;
@@ -109,7 +88,6 @@ nav, .meta {
     background-color: #333;
     color: #fc0;
     text-align: center;
-    text-transform: uppercase;
     font-size: 0.625em;
     font-weight: 900;
     padding: 10px 5px;
@@ -123,7 +101,6 @@ nav, .meta {
   }
 
   .current {
-
     a {
       background-color: #fc0;
       color: #222;
@@ -131,47 +108,6 @@ nav, .meta {
       text-shadow: 0 1px 0 rgba(255,255,255,.3);
     }
   }
-}
-
-/*
- * This code is courtesy Ben Balter, modified by Parker Moore for jekyllrb.com
- * http://ben.balter.com/2014/03/13/pages-anchor-links/
- */
-.header-link {
-  position: relative;
-  left: 0.5em;
-  opacity: 0;
-  font-size: 0.8em;
-  // // @include transition(opacity 0.2s ease-in-out 0.1s);
-}
-h2:hover .header-link,
-h3:hover .header-link,
-h4:hover .header-link,
-h5:hover .header-link,
-h6:hover .header-link {
-  opacity: 1;
-}
-
-@media (max-width: 580px) {
-  header {
-    .flexbox { height: auto }
-    .logo img { margin-top: 0 }
-  }
-}
-@media (max-width: 699px) {
-  .searchbox { display: none }
-}
-@media (max-width: 768px) {
-  .main-nav ul { text-align: right }
-}
-@media (max-width: 830px) {
-  .main-nav {
-    .show-on-mobiles { display: inline; }
-    .hide-on-mobiles { display: none; }
-  }
-}
-@media (max-width: 890px) {
-  .meta { display: none; }
 }
 
 /* Footer */
