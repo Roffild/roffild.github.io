@@ -2,13 +2,15 @@
 title: MetaTrader 5 Agents & AWS EC2
 ---
 
-Использование Агентов тестирования на серверах Амазона.
+Использование MetaTrader 5 (MT5) Agents на серверах Амазона.
+
+MetaTrader 4 (MT4) не имеет Агентов тестирования.
 
 Отличие от использования облака Агентов:
 * Фиксированная цена за час и фиксированное количество ядер процессора.
 * Возможность использования локальных файлов.
 * Возможность использования OpenCL на CPU (и GPU, если инстанс позволяет).
-* Закачивать большие файлы, необходимые для тестирования, можно через корзину S3.
+* Закачивать большие файлы, необходимые для тестирования, можно через ведро S3.
 * Вероятна возможность использования динамических библиотек (DLL).
 
 Агенты запускаются с флагом "/local", как при локальном использовании.
@@ -36,22 +38,22 @@ cc2.8xlarge идеально подходит для Агентов тестир
 Нужно открыть порты для доступа извне. Поскольку сервер будет существовать ограниченное время и не будет использоваться в публичных целях, то можно не заморачиваться с выбором портов и открыть их все, хоть это и противоречит правилам безопасности.<br/>
 ![Security Groups AllPorts](/images/agent-security-groups-allports.png)
 
-Нужно создать Роль с правами доступа в корзину S3.
+Нужно создать Роль с правами доступа в ведро S3.
 1. [Перейти в раздел управления Ролями](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles){:target="_blank"} и нажать на синюю кнопку "Create role".
 2. Выбрать сервис EC2 и нажать на синюю кнопку "Next".<br/>
 ![ubuntu](/images/agent-create-role-1.png)
-3. Скрипт для запуска Агентов только скачивает файлы из корзины S3, поэтому достаточно выбрать "AmazonS3ReadOnlyAccess" и нажать на синюю кнопку "Next".<br/>
+3. Скрипт для запуска Агентов только скачивает файлы из ведра S3, поэтому достаточно выбрать "AmazonS3ReadOnlyAccess" и нажать на синюю кнопку "Next".<br/>
 ![ubuntu](/images/agent-create-role-2.png)
 4. Теперь нужно задать имя Роли и нажать на синюю кнопку "Create role".<br/>
 ![ubuntu](/images/agent-create-role-3.png)
 
-Можно создать ключи доступа для использования программ по закачке файлов в корзину S3. Эти ключи также позволяют получать спот-цены со всех регионов в [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils){:target="_blank"}. Забытые ключи доступа в исходных кодах могут [доставить неприятности](https://habr.com/post/357764/){:target="_blank"}.
+Можно создать ключи доступа для использования программ по закачке файлов в ведро S3. Эти ключи также позволяют получать спот-цены со всех регионов в [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils){:target="_blank"}. Забытые ключи доступа в исходных кодах могут [доставить неприятности](https://habr.com/post/357764/){:target="_blank"}.
 
 ## Закачка файлов в S3
-1. [Сначала нужно создать корзину S3 с параметрами по умолчанию.](https://s3.console.aws.amazon.com/s3/home){:target="_blank"}
+1. [Сначала нужно создать ведро S3 с параметрами по умолчанию.](https://s3.console.aws.amazon.com/s3/home){:target="_blank"}
 2. Создать папку "MetaQuotes".<br/>
 ![AWS S3 root](/images/agent-s3-root.png)
-3. Закачать в папку "MetaQuotes" файл "c:\Program Files\MetaTrader 5\metatester64.exe".<br/>
+3. Закачать файл "c:\Program Files\MetaTrader 5\metatester64.exe" в папку "MetaQuotes".<br/>
 ![AWS S3 MetaQuotes](/images/agent-s3-metaquotes.png)
 4. Нужные файлы из папки "c:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\Common\Files\" закачать в "MetaQuotes/Terminal/Common/Files/".
 
@@ -60,7 +62,7 @@ cc2.8xlarge идеально подходит для Агентов тестир
 ## Заказ сервера для Агентов
 В разделе [Spot Requests](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} нажать на синюю кнопку "Request Spot Instances".
 
-Созданный мною скрипт для запуска Агентов расчитан на Ubuntu.<br/>
+Созданный мною скрипт для запуска Агентов рассчитан на Ubuntu.<br/>
 ![Ubuntu](/images/agent-ubuntu.png)
 
 Я обычно выбираю cc2.8xlarge со встроенным SSD на 840GB. На него часто большая скидка, потому что этот инстанс прошлого поколения, но для Агентов тестирования он отлично подходит.<br/>
@@ -79,11 +81,11 @@ cc2.8xlarge идеально подходит для Агентов тестир
 
 Открываем [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh){:target="_blank"} и вставляем содержимое в "User data".<br/>
 ![User data](/images/agent-userdata.png)
-* Hours=1 - ограничивает работу инстанса по количеству часов, потому что оплата почасовая.<br/>
-* agentStartPort=5000 - начальный порт для 1-ого Агента.<br/>
-* agentPassword=amazon99 - пароль для доступа к Агентам.<br/>
-* bucket= - название корзины, где находятся необходимые для теста файлы.<br/>
-* Если роль не задана, то придётся указать ключи доступа, чтобы скачать файлы из корзины S3.
+* Hours=1 - ограничивает работу инстанса по количеству часов, потому что оплата почасовая.
+* agentStartPort=5000 - начальный порт для 1-ого Агента.
+* agentPassword=amazon99 - пароль для доступа к Агентам.
+* bucket= - название ведра, где находятся необходимые для теста файлы.
+* Если роль не задана, то придётся указать ключи доступа, чтобы скачать файлы из ведра S3.
 
 После нажатия на синюю кнопку "Launch" произойдёт запрос на создание инстанса.
 
@@ -94,7 +96,7 @@ cc2.8xlarge идеально подходит для Агентов тестир
 ![IP](/images/agent-ip.png)
 
 ## Добавление Агентов в MetaTrader 5
-Теперь можно добавить Агенты в список для оптимизации в MetaTrader 5.<br/>
+Теперь можно добавить Агенты в список для оптимизации в MetaTrader 5 (MT5).<br/>
 ![MT5 Add](/images/agent-add-1.png)<br/>
 ![MT5 Add 2](/images/agent-add-2.png)
 
