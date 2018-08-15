@@ -1,16 +1,24 @@
 import os
+import re
 from datetime import datetime
 
 def readme(fromf, tof):
     url = 'https://github.com/Roffild/RoffildLibrary/blob/master/'
+    rg = re.compile(r'\]\((?P<url>[^\)]+)\)')
+    lines = []
     with open(fromf, 'r', encoding='utf-8-sig') as org:
-        with open(tof, 'w+', encoding='utf-8-sig') as md:
-            md.write('---\n')
-            md.write('title: ' + org.readline().replace('# ', ''))
-            md.write('---\n')
-            for line in org:
-                md.write(line.replace('](', '](' + url).replace(url + 'http', 'http'))
-            md.write('\n<a href="https://roffild.com/" hreflang="en">English</a>, <a href="https://roffild.com/ru/" hreflang="ru">Russian</a>\n')
+        lines = org.readlines()
+    with open(tof, 'w+', encoding='utf-8-sig') as md:
+        md.write('---\n')
+        md.write('title: ' + lines.pop(0).replace('# ', ''))
+        md.write('---\n')
+        if fromf.find('ru.') < 0:
+            md.write('[Download ZIP from GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}\n')
+        else:
+            md.write('[Скачать ZIP с GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}\n')
+        for line in lines:
+            md.write(rg.sub(r'](' + url + r'\g<url>){:target="_blank"}', line).replace(url + 'http', 'http'))
+        md.write('\n<a href="https://roffild.com/" hreflang="en">English</a>, <a href="https://roffild.com/ru/" hreflang="ru">Russian</a>\n')
 
 readme('../RoffildLibrary/README.md', 'index.md')
 readme('../RoffildLibrary/README_ru.md', 'ru/index.md')

@@ -1,6 +1,7 @@
 ﻿---
 title: Библиотека Roffild'a
 ---
+[Скачать ZIP с GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}
 
 Я известен сообществу программистов на MQL5 под ником Roffild и это моя библиотека с открытым кодом для MQL5. Попытка реализовать возможности на MQL5, которые уже давно стали стандартом для популярных языков программирования. В каждом файле реализована одна идея. Библиотека пополняется по мере необходимости в новых возможностях.
 
@@ -8,7 +9,7 @@ title: Библиотека Roffild'a
 
 Я экспериментировал с разной структурой построения проекта. Для использования Git пришлось вынести файлы за пределы стандартной структуры папок, принятой в MetaQuotes. Создать ссылку на промежуточную папку (в этой библиотеке папка "Roffild") - лучший вариант.
 
-MetaEditor может сохранять код в UTF-16, но кодировка UTF-8 с BOM тоже поддерживается. Для конвертации файла с исходным кодом нужно использовать сторонний редактор (рекомендую [Notepad++](https://notepad-plus-plus.org/)).
+MetaEditor может сохранять код в UTF-16, но кодировка UTF-8 с BOM тоже поддерживается. Для конвертации файла с исходным кодом нужно использовать сторонний редактор (рекомендую [Notepad++](https://notepad-plus-plus.org/){:target="_blank"}).
 
 Библиотеку можно разделить на интересы:
 * обычные задачи (ArrayList, Log4MQL, ToIndicator и т.д.);
@@ -18,50 +19,52 @@ MetaEditor может сохранять код в UTF-16, но кодировк
 MQL5 является частью торговой платформы MetaTrader 5 (MT5) для Forex, CFD и Futures. До сих пор используется версия MetaTrader 4 (MT4) с MQL4, но после последних обновлений совместима с синтаксисом MQL5. Официально версия MetaTrader 4 (MT4) уже не поддерживается, но для совместимости можно использовать ``` #property strict ``` в начале файла.
 
 ### Документация
-[MQL5](https://roffild.com/mql5/)<br/>
-[Java](https://roffild.com/java/)
+[MQL5](https://roffild.com/mql5/){:target="_blank"}<br/>
+[Java](https://roffild.com/java/){:target="_blank"}
 
 ### Ссылки
-[Roffild.com](https://roffild.com/ru/)<br/>
-[Github](https://github.com/Roffild/RoffildLibrary)<br/>
-[MQL5.com: topic for discussion in English](https://www.mql5.com/en/forum/247134)<br/>
-[MQL5.com: тема для обсуждения на Русском](https://www.mql5.com/ru/forum/245373)
+[Roffild.com](https://roffild.com/ru/){:target="_blank"}<br/>
+[Github](https://github.com/Roffild/RoffildLibrary){:target="_blank"}<br/>
+[GitLab](https://gitlab.com/Roffild/RoffildLibrary){:target="_blank"}<br/>
+[BitBucket](https://bitbucket.org/Roffild/roffildlibrary/){:target="_blank"}<br/>
+[MQL5.com: topic for discussion in English](https://www.mql5.com/en/forum/247134){:target="_blank"}<br/>
+[MQL5.com: тема для обсуждения на Русском](https://www.mql5.com/ru/forum/245373){:target="_blank"}
 
 -----------------
-* [Experts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/)
-  * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils) - Можно использовать как пример разработки проекта на Java.
-  * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5)
-  * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5)
-  * [Examples/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/)
-    * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5)
-* [Include/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/)
-  * [MLPDataFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/MLPDataFile.mqh) - Формат данных для Alglib_MultilayerPerceptron и Alglib_RandomForest. MLPDataFile = CSV в бинарном формате.
-  * [ArrayList_macros.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayList_macros.mqh) - Этот вариант еще используется из-за плохой поддержки шаблонов редактором кода.
-  * [ArrayList.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayList.mqh) - ArrayList из Java.
-  * [ArrayListClass.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayListClass.mqh) - ArrayList из Java только для Класса.
-  * [ForestSerializer.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ForestSerializer.mqh) - Сохранение и загрузка данных для класса CDecisionForest (Alglib).
-  * [Log4MQL.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL.mqh) и [Log4MQL_tofile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL_tofile.mqh) + [модуль](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/LogMX) ([скачать](https://roffild.com/Log4MQLParser.zip)) для [LogMX](http://www.logmx.com/) - Logger for MQL5 (Log4MQL).
-  * [OrderData.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderData.mqh) - Симуляция ордеров с прикреплёнными данными для исследований.
-    * [OrderSql.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderSql.mqh) - Запись данных от ордеров (COrderData) в файл формата MySQL.
-  * [SqlFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/SqlFile.mqh) - Запись данных в файл формата MySQL.
-    * [CsvFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/CsvFile.mqh) - Запись данных в файл формата CSV.
-  * [Statistic.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Statistic.mqh) - Подсчёт данных и распечатка накопленной информации.
-  * [TesterSql.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/TesterSql.mqh) - Запись результатов оптимизации в файлы SQL и CSV.
-  * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ToIndicator.mqh) - Отображение данных из Эксперта или Скрипта с помощью индикаторов.
-  * [UnitTest.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/UnitTest.mqh) - Базовый класс для UnitTest.
-  * [Serialization.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Serialization.mqh)
-  * [RoffildJava/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/)
-    * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/)
-    * [RoffildLibrary](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/RoffildLibrary/)
-    * [Spark](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/Spark/) - Чтение из MLPDataFile.
-    * [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh) - Рабочий скрипт для поднятия агентов тестирования на Ubuntu 14 в AWS.
-* [Indicators/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/)
-  * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mqh)
-  * [ToIndicator.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mq5)
-  * [ToIndicator_window.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator_window.mq5)
-* [Scripts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/)
-  * [MLPDataFileSparkTest](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/MLPDataFileSparkTest) - Пример проекта для Spark и тест MLPDataFile.
-  * [UnitTests](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/UnitTests)
+* [Experts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/){:target="_blank"}
+  * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils){:target="_blank"} - Можно использовать как пример разработки проекта на Java.
+  * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"}
+  * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"}
+  * [Examples/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/){:target="_blank"}
+    * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5){:target="_blank"}
+* [Include/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/){:target="_blank"}
+  * [MLPDataFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/MLPDataFile.mqh){:target="_blank"} - Формат данных для Alglib_MultilayerPerceptron и Alglib_RandomForest. MLPDataFile = CSV в бинарном формате.
+  * [ArrayList_macros.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayList_macros.mqh){:target="_blank"} - Этот вариант еще используется из-за плохой поддержки шаблонов редактором кода.
+  * [ArrayList.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayList.mqh){:target="_blank"} - ArrayList из Java.
+  * [ArrayListClass.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ArrayListClass.mqh){:target="_blank"} - ArrayList из Java только для Класса.
+  * [ForestSerializer.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ForestSerializer.mqh){:target="_blank"} - Сохранение и загрузка данных для класса CDecisionForest (Alglib).
+  * [Log4MQL.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL.mqh){:target="_blank"} и [Log4MQL_tofile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Log4MQL_tofile.mqh){:target="_blank"} + [модуль](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/LogMX){:target="_blank"} ([скачать](https://roffild.com/Log4MQLParser.zip){:target="_blank"}) для [LogMX](http://www.logmx.com/){:target="_blank"} - Logger for MQL5 (Log4MQL).
+  * [OrderData.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderData.mqh){:target="_blank"} - Симуляция ордеров с прикреплёнными данными для исследований.
+    * [OrderSql.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/OrderSql.mqh){:target="_blank"} - Запись данных от ордеров (COrderData) в файл формата MySQL.
+  * [SqlFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/SqlFile.mqh){:target="_blank"} - Запись данных в файл формата MySQL.
+    * [CsvFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/CsvFile.mqh){:target="_blank"} - Запись данных в файл формата CSV.
+  * [Statistic.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Statistic.mqh){:target="_blank"} - Подсчёт данных и распечатка накопленной информации.
+  * [TesterSql.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/TesterSql.mqh){:target="_blank"} - Запись результатов оптимизации в файлы SQL и CSV.
+  * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/ToIndicator.mqh){:target="_blank"} - Отображение данных из Эксперта или Скрипта с помощью индикаторов.
+  * [UnitTest.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/UnitTest.mqh){:target="_blank"} - Базовый класс для UnitTest.
+  * [Serialization.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/Serialization.mqh){:target="_blank"}
+  * [RoffildJava/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/){:target="_blank"}
+    * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/){:target="_blank"}
+    * [RoffildLibrary](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/RoffildLibrary/){:target="_blank"}
+    * [Spark](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/Spark/){:target="_blank"} - Чтение из MLPDataFile.
+    * [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh){:target="_blank"} - Рабочий скрипт для поднятия агентов тестирования на Ubuntu в AWS. [Инструкция здесь.](https://roffild.com/ru/agents.html){:target="_blank"}
+* [Indicators/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/){:target="_blank"}
+  * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mqh){:target="_blank"}
+  * [ToIndicator.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mq5){:target="_blank"}
+  * [ToIndicator_window.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator_window.mq5){:target="_blank"}
+* [Scripts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/){:target="_blank"}
+  * [MLPDataFileSparkTest](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/MLPDataFileSparkTest){:target="_blank"} - Пример проекта для Spark и тест MLPDataFile.
+  * [UnitTests](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/UnitTests){:target="_blank"}
 
 ## Установка
 
@@ -82,7 +85,7 @@ Windows имеет ограничения на 255 символов пути к 
 
 ## Code style
 
-[Google Java Style](https://google.github.io/styleguide/javaguide.html)
+[Google Java Style](https://google.github.io/styleguide/javaguide.html){:target="_blank"}
 
 Tab = 3 spaces
 
@@ -90,6 +93,6 @@ Column limit = 110
 
 ## License
 
-[Apache License 2.0](https://github.com/Roffild/RoffildLibrary/blob/master/LICENSE)
+[Apache License 2.0](https://github.com/Roffild/RoffildLibrary/blob/master/LICENSE){:target="_blank"}
 
 <a href="https://roffild.com/" hreflang="en">English</a>, <a href="https://roffild.com/ru/" hreflang="ru">Russian</a>
