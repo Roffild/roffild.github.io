@@ -1,8 +1,10 @@
 ﻿---
 title: MetaTrader 5 Agents & AWS EC2
+description: Using MetaTrader 5 (MT5) Agents on Amazon servers. This is an excellent option for checking the trading strategy for the currency and stock markets Forex, CFD and Futures.
 ---
 
 Using MetaTrader 5 (MT5) Agents on Amazon servers.
+This is an excellent option for checking the trading strategy for the currency and stock markets Forex, CFD and Futures.
 
 MetaTrader 4 (MT4) does not have Test Agents.
 
