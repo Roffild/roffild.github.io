@@ -1,16 +1,16 @@
 ﻿---
 title: MetaTrader 5 Agents & AWS EC2
-description: Using MetaTrader 5 (MT5) Agents on Amazon servers. This is an excellent option for checking the trading strategy for the currency and stock markets Forex, CFD and Futures.
+description: Using MetaTrader 5 (MT5) Agents on Amazon servers VPS/VDS. This is an excellent option for checking the trading strategy for the currency and stock markets Forex, CFD and Futures.
 ---
 
-Using MetaTrader 5 (MT5) Agents on Amazon servers.
+Using MetaTrader 5 (MT5) Agents on Amazon servers VPS/VDS.
 This is an excellent option for checking the trading strategy for the currency and stock markets Forex, CFD and Futures.
 
 MetaTrader 4 (MT4) does not have Test Agents.
 
 The difference from the use of the Agents cloud:
 * Fixed price per hour and a fixed number of processor cores.
-* Ability to use local files.
+* Ability to use local files from FILE_COMMON.
 * Ability to use OpenCL on the CPU (and GPU, if the instance allows).
 * Upload large files needed for testing, you can through the bucket S3.
 * Possibility of using dynamic libraries (DLL) is possible.
