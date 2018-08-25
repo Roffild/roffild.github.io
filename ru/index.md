@@ -1,5 +1,5 @@
 ﻿---
-title: MQL5 (MetaTrader): Машинное обучение, Случайный лес, Java, Apache Spark, AWS для Forex, CFD и Futures | Библиотека Roffild'a
+title: "MQL5 (MetaTrader): Машинное обучение, Случайный лес, Java, Apache Spark, AWS для Forex, CFD и Futures | Библиотека Roffild'a"
 pgtitle: Библиотека Roffild'a
 ---
 [Скачать ZIP с GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}
