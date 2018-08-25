@@ -20,8 +20,8 @@ def readme(fromf, tof):
             md.write(rg.sub(r'](' + url + r'\g<url>){:target="_blank"}', line).replace(url + 'http', 'http'))
         md.write('\n<a href="https://roffild.com/" hreflang="en">English</a>, <a href="https://roffild.com/ru/" hreflang="ru">Russian</a>\n')
 
-readme('../RoffildLibrary/README.md', 'index.md')
-readme('../RoffildLibrary/README_ru.md', 'ru/index.md')
+#readme('../RoffildLibrary/README.md', 'index.md')
+#readme('../RoffildLibrary/README_ru.md', 'ru/index.md')
 
 def gettime(filename):
     return datetime.utcfromtimestamp(os.path.getmtime(filename)).isoformat(timespec='seconds') + '+00:00'

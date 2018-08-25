@@ -1,5 +1,6 @@
 ﻿---
-title: MetaTrader 5 Agents & AWS EC2
+title: "MetaTrader 5 Agents & AWS EC2 (VPS/VDS) for Forex, CFD and Futures"
+pgtitle: MetaTrader 5 Agents & AWS EC2
 description: Using MetaTrader 5 (MT5) Agents on Amazon servers VPS/VDS. This is an excellent option for checking the trading strategy for the currency and stock markets Forex, CFD and Futures.
 ---
 
