@@ -26,5 +26,5 @@ defaults:
       path: "/ru/*"
     values:
       lang: ru
-		title: Библиотека Roffild'a
+      title: Библиотека Roffild'a
       description: Попытка реализовать возможности на MQL5, которые уже давно стали стандартом для популярных языков программирования.
