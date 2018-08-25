@@ -1,5 +1,5 @@
 ﻿---
-musttitle: MetaTrader 5 Agents & AWS EC2 (VPS/VDS) | Roffild’s Library for MQL5 (MT5): Forex, CFD and Futures.
+musttitle: "MetaTrader 5 Agents & AWS EC2 (VPS/VDS) | Roffild’s Library for MQL5 (MT5): Forex, CFD and Futures."
 pgtitle: MetaTrader 5 Agents & AWS EC2
 description: Использование MetaTrader 5 (MT5) Agents на серверах Амазона VPS/VDS. Это отличный вариант проверки торговой стратегии для валютных и биржевых рынков Forex, CFD и Futures.
 ---
