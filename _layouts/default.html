@@ -11,13 +11,7 @@
 {% else %}
 	 <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url | replace_first: "/ru/", "/"}}" />
 {% endif %}
-	 <title>{{ page.musttitle }}</title>
-{% if page.musttitle? %}
-	 <title>{{ page.musttitle }}</title>
-	 {% seo title=false %}
-{% else %}
     {% seo %}
-{% endif %}
     {% include analytics.html %}
   </head>
   <body>
@@ -30,7 +24,7 @@
     <a href="https://github.com/Roffild/RoffildLibrary/" target="_blank" hreflang="en">GitHub</a>
 	 <a href="{{ page.url | absolute_url | replace_first: ".com", ".com/ru"}}" hreflang="ru">Русский</a>
 {% else %}
-    <a href="https://roffild.com/" hreflang="ru">Главная</a>
+    <a href="https://roffild.com/ru/" hreflang="ru">Главная</a>
     <a href="https://roffild.com/ru/agents.html" hreflang="ru">Агенты</a>
     <a href="https://roffild.com/mql5/" target="_blank" hreflang="en">MQL5Doc</a>
     <a href="https://roffild.com/java/" target="_blank" hreflang="en">JavaDoc</a>

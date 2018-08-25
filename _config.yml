@@ -1,5 +1,5 @@
 # Site settings
-title: Roffild’s Library for MQL5 (MetaTrader) with Java, Apache Spark, AWS
+title: Roffild’s Library
 name: Roffild’s Library
 url: https://roffild.com
 
@@ -26,4 +26,5 @@ defaults:
       path: "/ru/*"
     values:
       lang: ru
+		title: Библиотека Roffild'a
       description: Попытка реализовать возможности на MQL5, которые уже давно стали стандартом для популярных языков программирования.
