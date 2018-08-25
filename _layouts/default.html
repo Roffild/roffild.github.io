@@ -11,6 +11,7 @@
 {% else %}
 	 <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url | replace_first: "/ru/", "/"}}" />
 {% endif %}
+	 <title>{{ page.musttitle }}</title>
 {% if page.musttitle? %}
 	 <title>{{ page.musttitle }}</title>
 	 {% seo title=false %}
