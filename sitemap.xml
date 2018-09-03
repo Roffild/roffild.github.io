@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://roffild.com/agents.html</loc><lastmod>2018-08-25T23:08:19+00:00</lastmod><priority>1.0</priority></url>
-<url><loc>https://roffild.com/index.html</loc><lastmod>2018-08-25T23:13:28+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/</loc><lastmod>2018-09-03T23:31:17+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/index.html</loc><lastmod>2018-09-03T23:31:17+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/Log4MQL.html</loc><lastmod>2018-07-04T21:01:43+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/ru/agents.html</loc><lastmod>2018-08-25T23:10:30+00:00</lastmod><priority>1.0</priority></url>
-<url><loc>https://roffild.com/ru/index.html</loc><lastmod>2018-08-25T22:54:02+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/ru/</loc><lastmod>2018-09-03T23:31:17+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/ru/index.html</loc><lastmod>2018-09-03T23:31:17+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/ru/Log4MQL.html</loc><lastmod>2018-07-04T21:01:43+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/mql5/annotated.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/mql5/classes.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
@@ -85,6 +87,7 @@
 <url><loc>https://roffild.com/mql5/globals_func.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/mql5/globals_vars.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/mql5/hierarchy.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
+<url><loc>https://roffild.com/mql5/</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/mql5/index.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/mql5/struct_s_to_indicator___data-members.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/mql5/struct_s_to_indicator___data.html</loc><lastmod>2018-07-13T23:17:48+00:00</lastmod><priority>0.5</priority></url>
@@ -190,6 +193,7 @@
 <url><loc>https://roffild.com/java/deprecated-list.html</loc><lastmod>2018-07-13T23:17:49+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/java/help-doc.html</loc><lastmod>2018-07-13T23:17:49+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/java/index-all.html</loc><lastmod>2018-07-13T23:17:49+00:00</lastmod><priority>0.5</priority></url>
+<url><loc>https://roffild.com/java/</loc><lastmod>2018-07-13T23:17:49+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/java/index.html</loc><lastmod>2018-07-13T23:17:49+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/java/overview-frame.html</loc><lastmod>2018-07-13T23:17:49+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/java/overview-summary.html</loc><lastmod>2018-07-13T23:17:49+00:00</lastmod><priority>0.5</priority></url>

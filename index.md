@@ -1,6 +1,6 @@
 ﻿---
-title: "MQL5 (MetaTrader): Machine Learning, Random Forest, Java, Apache Spark, AWS for Forex, CFD and Futures"
 pgtitle: Roffild's Library
+title: "MQL5 (MetaTrader): Machine Learning, Random Forest, Java, Apache Spark, AWS for Forex, CFD and Futures"
 ---
 [Download ZIP from GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}
 
@@ -43,8 +43,8 @@ MQL5 is part of the trading platform MetaTrader 5 (MT5) for Forex, CFD and Futur
 -----------------
 * [Experts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/){:target="_blank"}
   * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils){:target="_blank"} - Can be used as an example of developing a project in Java.
-  * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"}
-  * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"}
+  * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"} - Create a neural network (Multilayer Perceptron) with two hidden layers.
+  * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"} - Create a random forest.
   * [Examples/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/){:target="_blank"}
     * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5){:target="_blank"}
 * [Include/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/){:target="_blank"}

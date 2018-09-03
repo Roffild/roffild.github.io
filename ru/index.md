@@ -1,6 +1,6 @@
 ﻿---
-title: "MQL5 (MetaTrader): Машинное обучение, Случайный лес, Java, Apache Spark, AWS для Forex, CFD и Futures"
 pgtitle: Библиотека Roffild'a
+title: "MQL5 (MetaTrader): Машинное обучение, Случайный лес, Java, Apache Spark, AWS для Forex, CFD и Futures"
 ---
 [Скачать ZIP с GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}
 
@@ -34,8 +34,8 @@ MQL5 является частью торговой платформы MetaTrade
 -----------------
 * [Experts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/){:target="_blank"}
   * [AmazonUtils](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/AmazonUtils){:target="_blank"} - Можно использовать как пример разработки проекта на Java.
-  * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"}
-  * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"}
+  * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"} - Создание нейронной сети (Multilayer Perceptron) с двумя скрытыми слоями.
+  * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"} - Создание случайного леса.
   * [Examples/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/){:target="_blank"}
     * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5){:target="_blank"}
 * [Include/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/){:target="_blank"}
