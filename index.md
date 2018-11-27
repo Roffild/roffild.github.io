@@ -68,6 +68,7 @@ MQL5 is part of the trading platform MetaTrader 5 (MT5) for Forex, CFD and Futur
     * [RoffildLibrary](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/RoffildLibrary/){:target="_blank"}
     * [Spark](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/Spark/){:target="_blank"} - Reading from MLPDataFile.
     * [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh){:target="_blank"} - Working script for raising test agents on Ubuntu in AWS. [The documentation is here.](https://roffild.com/agents.html){:target="_blank"}
+  * [RoffildPython/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildPython/){:target="_blank"}
 * [Indicators/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/){:target="_blank"}
   * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mqh){:target="_blank"}
   * [ToIndicator.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mq5){:target="_blank"}
@@ -75,6 +76,7 @@ MQL5 is part of the trading platform MetaTrader 5 (MT5) for Forex, CFD and Futur
 * [Scripts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/){:target="_blank"}
   * [MLPDataFileSparkTest](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/MLPDataFileSparkTest){:target="_blank"} - Example project for Spark and MLPDataFile test.
   * [UnitTests](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/UnitTests){:target="_blank"}
+* [buildall_and_tests.py](https://github.com/Roffild/RoffildLibrary/blob/master/buildall_and_tests.py){:target="_blank"} - The script builds all components of the library and run tests.
 
 ## Installation
 

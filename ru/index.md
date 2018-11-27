@@ -59,6 +59,7 @@ MQL5 является частью торговой платформы MetaTrade
     * [RoffildLibrary](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/RoffildLibrary/){:target="_blank"}
     * [Spark](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/Spark/){:target="_blank"} - Чтение из MLPDataFile.
     * [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh){:target="_blank"} - Рабочий скрипт для поднятия агентов тестирования на Ubuntu в AWS. [Инструкция здесь.](https://roffild.com/ru/agents.html){:target="_blank"}
+  * [RoffildPython/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildPython/){:target="_blank"}
 * [Indicators/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/){:target="_blank"}
   * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mqh){:target="_blank"}
   * [ToIndicator.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mq5){:target="_blank"}
@@ -66,6 +67,7 @@ MQL5 является частью торговой платформы MetaTrade
 * [Scripts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/){:target="_blank"}
   * [MLPDataFileSparkTest](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/MLPDataFileSparkTest){:target="_blank"} - Пример проекта для Spark и тест MLPDataFile.
   * [UnitTests](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/UnitTests){:target="_blank"}
+* [buildall_and_tests.py](https://github.com/Roffild/RoffildLibrary/blob/master/buildall_and_tests.py){:target="_blank"} - Скрипт сборки всех компонентов библиотеки и запуска тестов.
 
 ## Установка
 
