@@ -13,10 +13,10 @@ var class_c_m_l_p_data_file =
     [ "initWriteValidation", "class_c_m_l_p_data_file.html#a5b7b628b45eed39974c54bf60188d0e3", null ],
     [ "initWriteValidation", "class_c_m_l_p_data_file.html#a1b481d4420ad8be4c486ffbe6fcd8dda", null ],
     [ "read", "class_c_m_l_p_data_file.html#a1ec61bb73a764afbf1914d4a1c69439e", null ],
-    [ "read", "class_c_m_l_p_data_file.html#ac532a0ce5c33f0f6235a85c7faf720c3", null ],
+    [ "readAll", "class_c_m_l_p_data_file.html#a469527cb785544a22aeb7be6413122f7", null ],
     [ "write", "class_c_m_l_p_data_file.html#aee9970bde3c263987f6ebc844e5f3745", null ],
     [ "write", "class_c_m_l_p_data_file.html#a2d61a81060fa5b8e2264bc864fc6b07d", null ],
-    [ "write", "class_c_m_l_p_data_file.html#adb0ea4917516cb9ab996328a7474fc58", null ],
+    [ "writeAll", "class_c_m_l_p_data_file.html#ad9d255a2e2492e5754ae6a4f628dfbe3", null ],
     [ "handleFile", "class_c_m_l_p_data_file.html#a01cb71b3a461401d496847b9772c83ad", null ],
     [ "header", "class_c_m_l_p_data_file.html#ac0ffbd67bbf684722757ab207840e411", null ],
     [ "path", "class_c_m_l_p_data_file.html#ae296c51ef5fed78664a979ebe10e5248", null ]

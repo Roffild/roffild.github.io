@@ -7,7 +7,7 @@ var searchData=
   ['indicatorsetinteger',['indicatorSetInteger',['../class_c_to_indicator.html#ab21546f77f7573835ac5dd50cecdf5c1',1,'CToIndicator::indicatorSetInteger(ENUM_CUSTOMIND_PROPERTY_INTEGER prop_id, int prop_modifier, int prop_value)'],['../class_c_to_indicator.html#a88c117ad822621fb54b49b18af1962bf',1,'CToIndicator::indicatorSetInteger(ENUM_CUSTOMIND_PROPERTY_INTEGER prop_id, int prop_value)']]],
   ['indicatorsetstring',['indicatorSetString',['../class_c_to_indicator.html#ae082507275c0a856cce877fe4e49e7fd',1,'CToIndicator::indicatorSetString(ENUM_CUSTOMIND_PROPERTY_STRING prop_id, int prop_modifier, string prop_value)'],['../class_c_to_indicator.html#a83aaca9b0a6a2e57252add07d73ad633',1,'CToIndicator::indicatorSetString(ENUM_CUSTOMIND_PROPERTY_STRING prop_id, string prop_value)']]],
   ['info',['info',['../class_c_log4_mql.html#ae5d9e95f885236032876476d24a2de3d',1,'CLog4Mql']]],
-  ['init',['init',['../class_c_serialization.html#abffa67afafe0e5c46a83f281903ad1ff',1,'CSerialization::init()'],['../class_c_to_indicator.html#a3c9576f047fc03022add2ca56103b4b7',1,'CToIndicator::init()']]],
+  ['init',['init',['../class_c_serialization.html#a1828cfea9ffba3f57d292893b4c2bcff',1,'CSerialization::init()'],['../class_c_to_indicator.html#a3c9576f047fc03022add2ca56103b4b7',1,'CToIndicator::init()']]],
   ['initread',['initRead',['../class_c_m_l_p_data_file.html#a799e599b6e9d53f9b8fe541ee5a746eb',1,'CMLPDataFile']]],
   ['initread0',['initRead0',['../class_c_m_l_p_data_file.html#af77a6eb7f8f3cf645cc665854c397568',1,'CMLPDataFile']]],
   ['initreadvalidation',['initReadValidation',['../class_c_m_l_p_data_file.html#a2a004ea64eeb96150b04a9b8e66caa15',1,'CMLPDataFile']]],

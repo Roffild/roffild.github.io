@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['read',['read',['../class_c_m_l_p_data_file.html#a1ec61bb73a764afbf1914d4a1c69439e',1,'CMLPDataFile::read(double &amp;data[], int &amp;size)'],['../class_c_m_l_p_data_file.html#ac532a0ce5c33f0f6235a85c7faf720c3',1,'CMLPDataFile::read(CMatrixDouble &amp;data, const bool append=false)'],['../class_c_serialization.html#aab879f703b3d2f5a640098ae6b1d2043',1,'CSerialization::read()']]],
+  ['read',['read',['../class_c_m_l_p_data_file.html#a1ec61bb73a764afbf1914d4a1c69439e',1,'CMLPDataFile::read()'],['../class_c_serialization.html#aab879f703b3d2f5a640098ae6b1d2043',1,'CSerialization::read()']]],
+  ['readall',['readAll',['../class_c_m_l_p_data_file.html#a469527cb785544a22aeb7be6413122f7',1,'CMLPDataFile']]],
   ['readtype',['readType',['../class_c_serialization.html#afeb9bcf52c00e1fea9e58d1646d276ba',1,'CSerialization']]],
   ['remove',['remove',['../class_c_array_list.html#a85a028521ac4dfb21d4f751df2e11850',1,'CArrayList::remove()'],['../class_c_array_list_class.html#a2f0de2a90b452ed37bdf284e50740992',1,'CArrayListClass::remove()'],['../_array_list__macros_8mqh.html#a2ad1aa316f278b2e9fa8121504749652',1,'remove():&#160;ArrayList_macros.mqh']]],
   ['removeall',['removeAll',['../class_c_array_list.html#a04b438ea4415bb5dede60a0678b1fdb0',1,'CArrayList::removeAll()'],['../_array_list__macros_8mqh.html#ad3ac270d929c79d2cd0ddc793cfd5c29',1,'removeAll():&#160;ArrayList_macros.mqh']]],

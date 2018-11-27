@@ -1,10 +1,10 @@
 var class_c_serialization =
 [
     [ "CSerialization", "class_c_serialization.html#aa6e709125e1814327c7d5bcb39ddd24a", null ],
-    [ "CSerialization", "class_c_serialization.html#a6dc1750dfec2bcbb51e7d053c0a60e04", null ],
+    [ "CSerialization", "class_c_serialization.html#ac673ffe2119fa52c2fa9c83f2b1d4fd2", null ],
     [ "~CSerialization", "class_c_serialization.html#ae622c7525421bb9f10de0c809e233385", null ],
     [ "close", "class_c_serialization.html#a0e5eaa0db81708b0da693247a85011e6", null ],
-    [ "init", "class_c_serialization.html#abffa67afafe0e5c46a83f281903ad1ff", null ],
+    [ "init", "class_c_serialization.html#a1828cfea9ffba3f57d292893b4c2bcff", null ],
     [ "read", "class_c_serialization.html#aab879f703b3d2f5a640098ae6b1d2043", null ],
     [ "readType", "class_c_serialization.html#afeb9bcf52c00e1fea9e58d1646d276ba", null ],
     [ "writeArray", "class_c_serialization.html#a4020167a3025c89f0107d1793c7037a3", null ],

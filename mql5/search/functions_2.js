@@ -19,7 +19,7 @@ var searchData=
   ['cordersqlobjectcast',['COrderSqlObjectCast',['../class_c_order_sql_object_cast.html#aa1b2e3251684b9f7c160ae28173ab189',1,'COrderSqlObjectCast']]],
   ['createfile',['createFile',['../class_c_csv_file.html#a4e51df5b37f50b4e446826f1b60a8cc2',1,'CCsvFile::createFile()'],['../class_c_sql_file.html#aa257b360e174496d1fd7de39afbdd7e9',1,'CSqlFile::createFile()']]],
   ['createtable',['createTable',['../class_c_csv_file.html#abd5b9f28ec699ce0c749cfe842e01317',1,'CCsvFile::createTable()'],['../class_c_sql_file.html#a94082bdfcab5692df46a9619b2ece671',1,'CSqlFile::createTable()']]],
-  ['cserialization',['CSerialization',['../class_c_serialization.html#aa6e709125e1814327c7d5bcb39ddd24a',1,'CSerialization::CSerialization()'],['../class_c_serialization.html#a6dc1750dfec2bcbb51e7d053c0a60e04',1,'CSerialization::CSerialization(string path, bool write=false)']]],
+  ['cserialization',['CSerialization',['../class_c_serialization.html#aa6e709125e1814327c7d5bcb39ddd24a',1,'CSerialization::CSerialization()'],['../class_c_serialization.html#ac673ffe2119fa52c2fa9c83f2b1d4fd2',1,'CSerialization::CSerialization(string path, bool write=false, bool common=true)']]],
   ['csqlfile',['CSqlFile',['../class_c_sql_file.html#a0593366772e45adcf94a9e963d493e9c',1,'CSqlFile::CSqlFile()'],['../class_c_sql_file.html#aa5091ef35e20957b4ab6fa71425bcdd4',1,'CSqlFile::CSqlFile(string _table, bool _append, string _schema=&quot;forex&quot;, string _filesuffix=&quot;&quot;)']]],
   ['csqlobjectsnapshot',['CSqlObjectSnapShot',['../class_c_sql_object_snap_shot.html#a7324975d72885c2a2d73f1ddc2f66154',1,'CSqlObjectSnapShot']]],
   ['cstatistic',['CStatistic',['../class_c_statistic.html#ab95ae2336cf7346164ae649990c8e3ba',1,'CStatistic']]],

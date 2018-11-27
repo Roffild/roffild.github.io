@@ -28,7 +28,7 @@ var searchData=
   ['count',['count',['../class_c_statistic_object.html#a74a24f4cfc7ca9981a818b46aa1ce2ea',1,'CStatisticObject']]],
   ['createfile',['createFile',['../class_c_csv_file.html#a4e51df5b37f50b4e446826f1b60a8cc2',1,'CCsvFile::createFile()'],['../class_c_sql_file.html#aa257b360e174496d1fd7de39afbdd7e9',1,'CSqlFile::createFile()']]],
   ['createtable',['createTable',['../class_c_csv_file.html#abd5b9f28ec699ce0c749cfe842e01317',1,'CCsvFile::createTable()'],['../class_c_sql_file.html#a94082bdfcab5692df46a9619b2ece671',1,'CSqlFile::createTable()']]],
-  ['cserialization',['CSerialization',['../class_c_serialization.html',1,'CSerialization'],['../class_c_serialization.html#aa6e709125e1814327c7d5bcb39ddd24a',1,'CSerialization::CSerialization()'],['../class_c_serialization.html#a6dc1750dfec2bcbb51e7d053c0a60e04',1,'CSerialization::CSerialization(string path, bool write=false)']]],
+  ['cserialization',['CSerialization',['../class_c_serialization.html',1,'CSerialization'],['../class_c_serialization.html#aa6e709125e1814327c7d5bcb39ddd24a',1,'CSerialization::CSerialization()'],['../class_c_serialization.html#ac673ffe2119fa52c2fa9c83f2b1d4fd2',1,'CSerialization::CSerialization(string path, bool write=false, bool common=true)']]],
   ['cserializationread',['CSerializationRead',['../class_c_serialization_read.html',1,'']]],
   ['csqlfile',['CSqlFile',['../class_c_sql_file.html',1,'CSqlFile'],['../class_c_sql_file.html#a0593366772e45adcf94a9e963d493e9c',1,'CSqlFile::CSqlFile()'],['../class_c_sql_file.html#aa5091ef35e20957b4ab6fa71425bcdd4',1,'CSqlFile::CSqlFile(string _table, bool _append, string _schema=&quot;forex&quot;, string _filesuffix=&quot;&quot;)']]],
   ['csqlobject',['CSqlObject',['../class_c_sql_object.html',1,'']]],

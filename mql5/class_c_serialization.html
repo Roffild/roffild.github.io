@@ -141,14 +141,14 @@ $(document).ready(function(){initNavTree('class_c_serialization.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6e709125e1814327c7d5bcb39ddd24a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#aa6e709125e1814327c7d5bcb39ddd24a">CSerialization</a> ()</td></tr>
 <tr class="separator:aa6e709125e1814327c7d5bcb39ddd24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc1750dfec2bcbb51e7d053c0a60e04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#a6dc1750dfec2bcbb51e7d053c0a60e04">CSerialization</a> (string path, bool write=false)</td></tr>
-<tr class="separator:a6dc1750dfec2bcbb51e7d053c0a60e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac673ffe2119fa52c2fa9c83f2b1d4fd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#ac673ffe2119fa52c2fa9c83f2b1d4fd2">CSerialization</a> (string path, bool write=false, bool common=true)</td></tr>
+<tr class="separator:ac673ffe2119fa52c2fa9c83f2b1d4fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae622c7525421bb9f10de0c809e233385"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#ae622c7525421bb9f10de0c809e233385">~CSerialization</a> ()</td></tr>
 <tr class="separator:ae622c7525421bb9f10de0c809e233385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5eaa0db81708b0da693247a85011e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#a0e5eaa0db81708b0da693247a85011e6">close</a> ()</td></tr>
 <tr class="separator:a0e5eaa0db81708b0da693247a85011e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abffa67afafe0e5c46a83f281903ad1ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#abffa67afafe0e5c46a83f281903ad1ff">init</a> (bool write=false, string path=&quot;&quot;)</td></tr>
-<tr class="separator:abffa67afafe0e5c46a83f281903ad1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1828cfea9ffba3f57d292893b4c2bcff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#a1828cfea9ffba3f57d292893b4c2bcff">init</a> (bool write=false, string path=&quot;&quot;, bool common=true)</td></tr>
+<tr class="separator:a1828cfea9ffba3f57d292893b4c2bcff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb9bcf52c00e1fea9e58d1646d276ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#afeb9bcf52c00e1fea9e58d1646d276ba">readType</a> ()</td></tr>
 <tr class="separator:afeb9bcf52c00e1fea9e58d1646d276ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab879f703b3d2f5a640098ae6b1d2043"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serialization.html#aab879f703b3d2f5a640098ae6b1d2043">read</a> (<a class="el" href="class_c_serialization_read.html">CSerializationRead</a> &amp;out)</td></tr>
@@ -202,8 +202,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6dc1750dfec2bcbb51e7d053c0a60e04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dc1750dfec2bcbb51e7d053c0a60e04">&#9670;&nbsp;</a></span>CSerialization() <span class="overload">[2/2]</span></h2>
+<a id="ac673ffe2119fa52c2fa9c83f2b1d4fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac673ffe2119fa52c2fa9c83f2b1d4fd2">&#9670;&nbsp;</a></span>CSerialization() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +218,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>write</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>write</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>common</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -293,8 +299,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abffa67afafe0e5c46a83f281903ad1ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abffa67afafe0e5c46a83f281903ad1ff">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a1828cfea9ffba3f57d292893b4c2bcff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1828cfea9ffba3f57d292893b4c2bcff">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +315,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>path</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>path</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>common</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
