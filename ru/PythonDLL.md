@@ -6,6 +6,7 @@ title: MetaTrader 5 (MQL5) + Python 3 DLL
 [Пост одного из разработчиков.](https://www.mql5.com/ru/forum/306688/page4#comment_10973513){:target="_blank"}
 
 Эта обертка создавалась с учетом изменений в Python 3.7
+[Скачать ZIP с GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}
 
 Python сейчас является стандартом для библиотек машинного обучения ([TensorFlow](https://www.tensorflow.org/){:target="_blank"}, [PyTorch](https://pytorch.org/){:target="_blank"} и т.п.).
 Сам Python довольно медленный и поэтому все библиотеки машинного обучения на C/C++ используют его только для взаимодействия с пользователем.
@@ -36,6 +37,10 @@ __mql__ = MQL()
 Название класса неважно, потому что отражение функций идет через переменную __mql__.
 Также у функции pyEval(..., override_class) аргумент override_class=true, когда изменяется переменная __mql__.
 
+Пример:
+[PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} и
+[PythonDLL_Example.py](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.py){:target="_blank"}
+
 Можно определить среду выполнение кода Python:
 ```python
 if __name__ == '__mql__':
@@ -61,23 +66,26 @@ Cannot call 'pyInitialize', 'Roffild\PythonDLL\x64\Release\PythonDLL.dll' is not
 unresolved import function call
 ```
 
-Python создавался как отдельная приложение и при встраемости есть проблемы, которые врядли когда-нибудь будут исправлены:
+Python создавался как отдельное приложение и при встраемости есть проблемы, которые вряд ли когда-нибудь будут исправлены:
 * Некоторые функции из API вызывают Py_FatalError(), которая вызывает системную [abort()](https://docs.microsoft.com/cpp/c-runtime-library/reference/abort){:target="_blank"} для разрушения процесса. Поэтому MetaTrader может закрыться без предупреждения. [issue30560](https://bugs.python.org/issue30560){:target="_blank"}, [issue9828](https://bugs.python.org/issue9828){:target="_blank"}
 * Py_Initialize() вызывает Py_FatalError() при ошибке. Если это происходит, то, скорей всего, путь к окружению Python неправильный.
-* Проблема с запуском Python в том, что ему необходима стандартная библиотека, которая на языке Python. Py_SetPath() задает путь к этой библиотеке Python до вызова Py_Initialize().
+* Для запуска необходима стандартная библиотека на языке Python. Py_SetPath() задает путь к этой библиотеке до вызова Py_Initialize().
 
-При активной консоле можно заметить вывод Py_FatalError() пока она не исчезнет.
+При активной консоли можно заметить вывод Py_FatalError(), пока она не исчезнет:
 ```
 Fatal Python error: Py_Initialize: unable to load the file system codec
 ```
 
-Ошибки компиляции и выполнения кода Python не отображаются автоматически на активной консоле.
+Ошибки компиляции и выполнения кода Python не отображаются автоматически на активной консоли.
 Но при использовании класса [CPythonDLL](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/PythonDLL.mqh){:target="_blank"} ошибки отображаются в логе терминала.
 
-Чтобы запускать в терминале несколько независимых экспертов, индикаторов и скриптов, использующих эту обертку, для каждого потока создается свой изолированный интерпретатор с помощью [Py_NewInterpreter()](https://docs.python.org/3/c-api/init.html#c.Py_NewInterpreter){:target="_blank"}.
+При запуске в терминале нескольких независимых экспертов, индикаторов и скриптов, использующих эту обертку, для каждого потока создается свой изолированный интерпретатор с помощью [Py_NewInterpreter()](https://docs.python.org/3/c-api/init.html#c.Py_NewInterpreter){:target="_blank"}.
 Но может возникнуть задержка при переключении потока, потому что в Python нет полноценного многопоточного выполнения, а есть [global interpreter lock (GIL)](https://docs.python.org/3/glossary.html#term-global-interpreter-lock){:target="_blank"}, который блокирует другие потоки при выполнении кода Python.
 
 При тестировании всегда есть только один интерпретатор.
+
+Выделение памяти - долгая операция, но от объема запрошенной памяти это неслишком зависит.
+Быстрее будет заранее выделить один мегабайт под строку и использовать этот буффер несколько раз, нежели каждый раз запрашивать необходимый объем памяти. 
 
 ## Для разработчиков 
 
