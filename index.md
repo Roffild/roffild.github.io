@@ -24,7 +24,8 @@ To convert a file with the source code, you need to use a third-party editor (I 
 This library can be divided into interests:
 * common tasks (ArrayList, Log4MQL, ToIndicator, etc.);
 * experiments with AlgLib in machine learning;
-* using Apache Spark with Amazon Web Services (EC2 and EMR), when the capabilities of AlgLib ceased to be enough.
+* using Apache Spark with Amazon Web Services (EC2 and EMR), when the capabilities of AlgLib ceased to be enough;
+* using TensorFlow or PyTorch via [PythonDLL](https://roffild.com/PythonDLL.html){:target="_blank"}.
 
 MQL5 is part of the trading platform MetaTrader 5 (MT5) for Forex, CFD and Futures. The version of MetaTrader 4 (MT4) with MQL4 is still used, but after the latest updates it is compatible with the MQL5 syntax. Officially, the version of MetaTrader 4 (MT4) is no longer supported, but for compatibility you can use ``` #property strict ``` at the beginning of the file.
 
@@ -46,6 +47,7 @@ MQL5 is part of the trading platform MetaTrader 5 (MT5) for Forex, CFD and Futur
   * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"} - Create a neural network (Multilayer Perceptron) with two hidden layers.
   * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"} - Create a random forest.
   * [Examples/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/){:target="_blank"}
+    * [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} - The example of using [PythonDLL](https://roffild.com/PythonDLL.html){:target="_blank"}.
     * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5){:target="_blank"}
 * [Include/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/){:target="_blank"}
   * [MLPDataFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/MLPDataFile.mqh){:target="_blank"} - Data format for Alglib_MultilayerPerceptron and Alglib_RandomForest. MLPDataFile = CSV in a binary format.
@@ -68,11 +70,14 @@ MQL5 is part of the trading platform MetaTrader 5 (MT5) for Forex, CFD and Futur
     * [RoffildLibrary](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/RoffildLibrary/){:target="_blank"}
     * [Spark](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/Spark/){:target="_blank"} - Reading from MLPDataFile.
     * [aws_ubuntu_user_data.sh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildJava/AmazonUtils/src/main/resources/aws_ubuntu_user_data.sh){:target="_blank"} - Working script for raising test agents on Ubuntu in AWS. [The documentation is here.](https://roffild.com/agents.html){:target="_blank"}
+  * [PythonDLL.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/PythonDLL.mqh){:target="_blank"} - Class for [PythonDLL](https://roffild.com/PythonDLL.html){:target="_blank"}.
   * [RoffildPython/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/RoffildPython/){:target="_blank"}
 * [Indicators/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/){:target="_blank"}
   * [ToIndicator.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mqh){:target="_blank"}
   * [ToIndicator.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator.mq5){:target="_blank"}
   * [ToIndicator_window.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Indicators/Roffild/ToIndicator_window.mq5){:target="_blank"}
+* [Libraries/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Libraries/Roffild/){:target="_blank"}
+  * [PythonDLL/](https://github.com/Roffild/RoffildLibrary/blob/master/Libraries/Roffild/PythonDLL/){:target="_blank"} - [PythonDLL](https://roffild.com/PythonDLL.html){:target="_blank"}.
 * [Scripts/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/){:target="_blank"}
   * [MLPDataFileSparkTest](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/MLPDataFileSparkTest){:target="_blank"} - Example project for Spark and MLPDataFile test.
   * [UnitTests](https://github.com/Roffild/RoffildLibrary/blob/master/Scripts/Roffild/UnitTests){:target="_blank"}
