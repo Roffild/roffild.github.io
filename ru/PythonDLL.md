@@ -37,11 +37,11 @@ __mql__ = MQL()
 Название класса неважно, потому что отражение функций идет через переменную __mql__.
 Также у функции pyEval(..., override_class) аргумент override_class=true, когда изменяется переменная __mql__.
 
-Пример:
+Пример:<br/>
 [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} и
 [PythonDLL_Example.py](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.py){:target="_blank"}
 
-Можно определить среду выполнение кода Python:
+Можно определить среду выполнения кода Python:
 ```python
 if __name__ == '__mql__':
     "run in MetaTrader"
