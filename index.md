@@ -1,6 +1,6 @@
 ﻿---
 pgtitle: Roffild's Library
-title: "MQL5 (MetaTrader): Machine Learning, Random Forest, Java, Apache Spark, AWS for Forex, CFD and Futures"
+title: "MQL5 (MetaTrader): Machine Learning, Random Forest, Python, Java, Apache Spark, AWS for Forex, CFD and Futures"
 ---
 [Download ZIP from GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}
 
@@ -47,7 +47,7 @@ MQL5 is part of the trading platform MetaTrader 5 (MT5) for Forex, CFD and Futur
   * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"} - Create a neural network (Multilayer Perceptron) with two hidden layers.
   * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"} - Create a random forest.
   * [Examples/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/){:target="_blank"}
-    * [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} - The example of using [PythonDLL](https://roffild.com/PythonDLL.html){:target="_blank"}.
+    * [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} and [PythonDLL_Example.py](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.py){:target="_blank"} - The example of using [PythonDLL](https://roffild.com/PythonDLL.html){:target="_blank"}.
     * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5){:target="_blank"}
 * [Include/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/){:target="_blank"}
   * [MLPDataFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/MLPDataFile.mqh){:target="_blank"} - Data format for Alglib_MultilayerPerceptron and Alglib_RandomForest. MLPDataFile = CSV in a binary format.

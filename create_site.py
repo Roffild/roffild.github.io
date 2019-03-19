@@ -12,11 +12,11 @@ def readme(fromf, tof):
         md.write('---\n')
         md.write('pgtitle: ' + lines.pop(0).replace('# ', ''))
         if fromf.find('ru.') < 0:
-            md.write('title: "MQL5 (MetaTrader): Machine Learning, Random Forest, Java, Apache Spark, AWS for Forex, CFD and Futures"\n')
+            md.write('title: "MQL5 (MetaTrader): Machine Learning, Random Forest, Python, Java, Apache Spark, AWS for Forex, CFD and Futures"\n')
             md.write('---\n')
             md.write('[Download ZIP from GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}\n')
         else:
-            md.write('title: "MQL5 (MetaTrader): Машинное обучение, Случайный лес, Java, Apache Spark, AWS для Forex, CFD и Futures"\n')
+            md.write('title: "MQL5 (MetaTrader): Машинное обучение, Случайный лес, Python, Java, Apache Spark, AWS для Forex, CFD и Futures"\n')
             md.write('---\n')
             md.write('[Скачать ZIP с GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}\n')
         for line in lines:

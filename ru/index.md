@@ -1,6 +1,6 @@
 ﻿---
 pgtitle: Библиотека Roffild'a
-title: "MQL5 (MetaTrader): Машинное обучение, Случайный лес, Java, Apache Spark, AWS для Forex, CFD и Futures"
+title: "MQL5 (MetaTrader): Машинное обучение, Случайный лес, Python, Java, Apache Spark, AWS для Forex, CFD и Futures"
 ---
 [Скачать ZIP с GitHub.](https://github.com/Roffild/RoffildLibrary/archive/master.zip){:target="_blank"}
 
@@ -38,7 +38,7 @@ MQL5 является частью торговой платформы MetaTrade
   * [Alglib_MultilayerPerceptron.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_MultilayerPerceptron.mq5){:target="_blank"} - Создание нейронной сети (Multilayer Perceptron) с двумя скрытыми слоями.
   * [Alglib_RandomForest.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Alglib_RandomForest.mq5){:target="_blank"} - Создание случайного леса.
   * [Examples/](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/){:target="_blank"}
-    * [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} - Пример использования [PythonDLL](https://roffild.com/ru/PythonDLL.html){:target="_blank"}.
+    * [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} и [PythonDLL_Example.py](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.py){:target="_blank"} - Пример использования [PythonDLL](https://roffild.com/ru/PythonDLL.html){:target="_blank"}.
     * [ToIndicator_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/ToIndicator_Example.mq5){:target="_blank"}
 * [Include/Roffild/](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/){:target="_blank"}
   * [MLPDataFile.mqh](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/MLPDataFile.mqh){:target="_blank"} - Формат данных для Alglib_MultilayerPerceptron и Alglib_RandomForest. MLPDataFile = CSV в бинарном формате.
