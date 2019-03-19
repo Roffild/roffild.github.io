@@ -8,5 +8,6 @@ var searchData=
   ['plus',['plus',['../class_c_statistic.html#a3007cf130a836c32d312f2184cf789ae',1,'CStatistic::plus(const ulong hash, const string describe=&quot;none&quot;, const int number=1)'],['../class_c_statistic.html#a4a26b7db16eb405a051795ef63a62eb7',1,'CStatistic::plus(CStatisticObject *value, const int number=1)']]],
   ['prev',['prev',['../class_c_order_data_object.html#a354cb4ab8669440d33e161dd69bc7c5c',1,'COrderDataObject']]],
   ['print',['print',['../class_c_statistic.html#aa751d56e5683dd45a7974eb59cf3eb01',1,'CStatistic']]],
-  ['property',['property',['../struct_s_to_indicator___parameter.html#a6b92b3595785a9e1bcc506ee444aff24',1,'SToIndicator_Parameter']]]
+  ['property',['property',['../struct_s_to_indicator___parameter.html#a6b92b3595785a9e1bcc506ee444aff24',1,'SToIndicator_Parameter']]],
+  ['pythondll_2emqh',['PythonDLL.mqh',['../_python_d_l_l_8mqh.html',1,'']]]
 ];

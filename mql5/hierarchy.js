@@ -15,6 +15,7 @@ var hierarchy =
     [ "COrderDataObject", "class_c_order_data_object.html", [
       [ "COrderSqlObject", "class_c_order_sql_object.html", null ]
     ] ],
+    [ "CPythonDLL", "class_c_python_d_l_l.html", null ],
     [ "CSerialization", "class_c_serialization.html", null ],
     [ "CSerializationRead", "class_c_serialization_read.html", null ],
     [ "CSqlFile", "class_c_sql_file.html", null ],

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unittest_2emqh',['UnitTest.mqh',['../_unit_test_8mqh.html',1,'']]]
+  ['testersql_2emqh',['TesterSql.mqh',['../_tester_sql_8mqh.html',1,'']]],
+  ['toindicator_2emqh',['ToIndicator.mqh',['../_to_indicator_8mqh.html',1,'']]]
 ];

@@ -27,6 +27,9 @@ var dir_952ffdede708b8b6087f814547f083e9 =
       [ "COrderSqlObjectCast", "class_c_order_sql_object_cast.html", "class_c_order_sql_object_cast" ],
       [ "COrderSql", "class_c_order_sql.html", "class_c_order_sql" ]
     ] ],
+    [ "PythonDLL.mqh", "_python_d_l_l_8mqh.html", [
+      [ "CPythonDLL", "class_c_python_d_l_l.html", "class_c_python_d_l_l" ]
+    ] ],
     [ "Serialization.mqh", "_serialization_8mqh.html", "_serialization_8mqh" ],
     [ "SqlFile.mqh", "_sql_file_8mqh.html", [
       [ "CSqlObject", "class_c_sql_object.html", "class_c_sql_object" ],

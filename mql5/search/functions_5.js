@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['finalize',['finalize',['../class_c_python_d_l_l.html#aad8e0ab765a5959b097d84b98237fa89',1,'CPythonDLL']]],
   ['findbar',['findBar',['../class_c_order_data.html#a8c0f1cd41ee8f696b0a6bb4a05825022',1,'COrderData']]],
   ['flush',['flush',['../class_c_m_l_p_data_file.html#a67b9a0cbd23e949c92d9cf15c568d690',1,'CMLPDataFile::flush()'],['../class_c_to_indicator.html#aef7d8408aebe5c2af77405505764d19a',1,'CToIndicator::flush()']]],
   ['framenext',['frameNext',['../class_c_tester_sql.html#a57e7c812d3aaeae4e502c2af76c63994',1,'CTesterSql']]],

@@ -12,6 +12,7 @@ var annotated_dup =
     [ "COrderSql", "class_c_order_sql.html", "class_c_order_sql" ],
     [ "COrderSqlObject", "class_c_order_sql_object.html", "class_c_order_sql_object" ],
     [ "COrderSqlObjectCast", "class_c_order_sql_object_cast.html", "class_c_order_sql_object_cast" ],
+    [ "CPythonDLL", "class_c_python_d_l_l.html", "class_c_python_d_l_l" ],
     [ "CSerialization", "class_c_serialization.html", "class_c_serialization" ],
     [ "CSerializationRead", "class_c_serialization_read.html", "class_c_serialization_read" ],
     [ "CSqlFile", "class_c_sql_file.html", "class_c_sql_file" ],

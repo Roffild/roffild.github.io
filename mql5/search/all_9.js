@@ -8,6 +8,7 @@ var searchData=
   ['indicatorsetstring',['indicatorSetString',['../class_c_to_indicator.html#ae082507275c0a856cce877fe4e49e7fd',1,'CToIndicator::indicatorSetString(ENUM_CUSTOMIND_PROPERTY_STRING prop_id, int prop_modifier, string prop_value)'],['../class_c_to_indicator.html#a83aaca9b0a6a2e57252add07d73ad633',1,'CToIndicator::indicatorSetString(ENUM_CUSTOMIND_PROPERTY_STRING prop_id, string prop_value)']]],
   ['info',['info',['../class_c_log4_mql.html#ae5d9e95f885236032876476d24a2de3d',1,'CLog4Mql']]],
   ['init',['init',['../class_c_serialization.html#a1828cfea9ffba3f57d292893b4c2bcff',1,'CSerialization::init()'],['../class_c_to_indicator.html#a3c9576f047fc03022add2ca56103b4b7',1,'CToIndicator::init()']]],
+  ['initialize',['initialize',['../class_c_python_d_l_l.html#ac171b7f6c79d2934ae8ed3d71f45024c',1,'CPythonDLL']]],
   ['initread',['initRead',['../class_c_m_l_p_data_file.html#a799e599b6e9d53f9b8fe541ee5a746eb',1,'CMLPDataFile']]],
   ['initread0',['initRead0',['../class_c_m_l_p_data_file.html#af77a6eb7f8f3cf645cc665854c397568',1,'CMLPDataFile']]],
   ['initreadvalidation',['initReadValidation',['../class_c_m_l_p_data_file.html#a2a004ea64eeb96150b04a9b8e66caa15',1,'CMLPDataFile']]],
@@ -20,8 +21,10 @@ var searchData=
   ['int_5fvalue',['int_value',['../struct_s_to_indicator___parameter.html#a7921c53660527df5c50a0b88844a7c0f',1,'SToIndicator_Parameter']]],
   ['isdebugenabled',['isDebugEnabled',['../class_c_log4_mql.html#a3af22427383ab836c1bc3ee7fe981ef9',1,'CLog4Mql']]],
   ['isempty',['isEmpty',['../class_c_array_list.html#a2e1642a2ad7492f54e67aee97ac1e64e',1,'CArrayList::isEmpty()'],['../class_c_array_list_class.html#af67ea4f403e621b8edfff77b12a982e5',1,'CArrayListClass::isEmpty()'],['../_array_list__macros_8mqh.html#af337ffd75e4f019ce15302c60715d84b',1,'isEmpty():&#160;ArrayList_macros.mqh']]],
+  ['iserror',['isError',['../class_c_python_d_l_l.html#a04e7e40695022fa214700fbe86f4db91',1,'CPythonDLL']]],
   ['iserrorenabled',['isErrorEnabled',['../class_c_log4_mql.html#a47ac50506ae519bf5f20f2b289cd6be1',1,'CLog4Mql']]],
   ['isinfoenabled',['isInfoEnabled',['../class_c_log4_mql.html#a31c85fdab6ebc1ff993add91e8597516',1,'CLog4Mql']]],
+  ['isinitialized',['isInitialized',['../class_c_python_d_l_l.html#acf176faf44dec4f3b4df93afe5233318',1,'CPythonDLL']]],
   ['istraceenabled',['isTraceEnabled',['../class_c_log4_mql.html#a351bbf28dfddade31f43cad196505068',1,'CLog4Mql']]],
   ['iswarnenabled',['isWarnEnabled',['../class_c_log4_mql.html#ae79c2a96c6022135bccaf2599c1bb9df',1,'CLog4Mql']]]
 ];
