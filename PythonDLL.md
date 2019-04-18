@@ -1,8 +1,9 @@
 ﻿---
 pgtitle: MetaTrader 5 (MQL5) + Python 3 DLL
-title: MetaTrader 5 (MQL5) + Python 3 DLL
+title: MetaTrader 5 (MQL5) + Python 3 DLL for Forex, CFD and Futures
 description: A data exchange between the MQL and Python via pre-created function.
 ---
+Use MetaTrader with Python 3 for Forex, CFD and Futures.
 From MetaTrader, you can get quotes in Python, but no complete connection between them.
 [This post is one of the developers (RU).](https://www.mql5.com/ru/forum/306688/page4#comment_10973513){:target="_blank"}
 
