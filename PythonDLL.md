@@ -3,7 +3,7 @@ pgtitle: MetaTrader 5 (MQL5) + Python 3 DLL
 title: MetaTrader 5 (MQL5) + Python 3 DLL for Forex, CFD and Futures
 description: A data exchange between the MQL and Python via pre-created function.
 ---
-Use MetaTrader with Python 3 for Forex, CFD and Futures.
+Use MetaTrader with Python 3 on financial stock exchanges, Forex, CFD and Futures.
 From MetaTrader, you can get quotes in Python, but no complete connection between them.
 [This post is one of the developers (RU).](https://www.mql5.com/ru/forum/306688/page4#comment_10973513){:target="_blank"}
 
@@ -72,6 +72,7 @@ Python was created as a separate application, and with embeddability there are p
 * Some functions from the API call Py_FatalError(), which calls the system [abort()](https://docs.microsoft.com/cpp/c-runtime-library/reference/abort){:target="_blank"} to terminate the process. MetaTrader may close without warning. [issue30560](https://bugs.python.org/issue30560){:target="_blank"}, [issue9828](https://bugs.python.org/issue9828){:target="_blank"}
 * Py_Initialize() calls Py_FatalError() on error. If this happens, the most likely path to the Python environment is incorrect.
 * A standard Python library is required to run. Py_SetPath() sets the path to this library before calling Py_Initialize().
+* Calling pyFinalize() to free memory makes sense, but because of a bug in the popular NumPy library, you should not do this. [issue8097](https://github.com/numpy/numpy/issues/8097){:target="_blank"}, [issue34309](https://bugs.python.org/issue34309){:target="_blank"}
 
 With the active console, you can notice the output of Py_FatalError() until it disappears:
 ```
@@ -106,6 +107,11 @@ Types in MQL:
 ```
 long = 8 bytes (64 bits) = -9 223 372 036 854 775 808 ... 9 223 372 036 854 775 807
 ulong = 8 bytes (64 bits) = 0 ... 18 446 744 073 709 551 615
+```
+
+CrashDumps:
+```
+%LOCALAPPDATA%\CrashDumps\
 ```
 
 [On all questions to address in this topic.](https://www.mql5.com/en/forum/247134){:target="_blank"}

@@ -3,7 +3,7 @@ pgtitle: MetaTrader 5 (MQL5) + Python 3 DLL
 title: MetaTrader 5 (MQL5) + Python 3 DLL для Forex, CFD и Futures
 description: Обмен данными между MQL и Python через заранее созданные функции.
 ---
-Использование MetaTrader с Python 3 для Forex, CFD и Futures.
+Использование MetaTrader с Python 3 на финансовых фондовых биржах, Forex, CFD и Futures.
 Из MetaTrader можно получать котировки в Python, но нет полноценной связи между ними.
 [Пост одного из разработчиков.](https://www.mql5.com/ru/forum/306688/page4#comment_10973513){:target="_blank"}
 
@@ -72,6 +72,7 @@ Python создавался как отдельное приложение и п
 * Некоторые функции из API вызывают Py_FatalError(), которая вызывает системную [abort()](https://docs.microsoft.com/cpp/c-runtime-library/reference/abort){:target="_blank"} для разрушения процесса. Поэтому MetaTrader может закрыться без предупреждения. [issue30560](https://bugs.python.org/issue30560){:target="_blank"}, [issue9828](https://bugs.python.org/issue9828){:target="_blank"}
 * Py_Initialize() вызывает Py_FatalError() при ошибке. Если это происходит, то, скорей всего, путь к окружению Python неправильный.
 * Для запуска необходима стандартная библиотека на языке Python. Py_SetPath() задает путь к этой библиотеке до вызова Py_Initialize().
+* Вызов pyFinalize() для освобождения памяти имеет смысл, но из-за бага в популярной библиотеке NumPy этого делать не стоит. [issue8097](https://github.com/numpy/numpy/issues/8097){:target="_blank"}, [issue34309](https://bugs.python.org/issue34309){:target="_blank"}
 
 При активной консоли можно заметить вывод Py_FatalError(), пока она не исчезнет:
 ```
@@ -106,6 +107,11 @@ int("9999999999999999999999999999999999999999999999", 10).bit_length() == 153
 ```
 long = 8 байт (64 бита) = -9 223 372 036 854 775 808 ... 9 223 372 036 854 775 807
 ulong = 8 байт (64 бита) = 0 ... 18 446 744 073 709 551 615
+```
+
+CrashDumps:
+```
+%LOCALAPPDATA%\CrashDumps\
 ```
 
 [По всем вопросам обращаться в эту тему.](https://www.mql5.com/ru/forum/245373){:target="_blank"}
