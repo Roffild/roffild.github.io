@@ -36,8 +36,8 @@ class MQL():
 
 __mql__ = MQL()
 ```
-Название класса неважно, потому что отражение функций идет через переменную __mql__.
-Также у функции pyEval(..., override_class) аргумент override_class=true, когда изменяется переменная __mql__.
+Название класса неважно, потому что отражение функций идет через переменную `__mql__`.
+Также у функции pyEval(..., override_class) аргумент override_class=true, когда изменяется переменная `__mql__`.
 
 Пример:<br/>
 [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} и
@@ -45,11 +45,10 @@ __mql__ = MQL()
 
 Можно определить среду выполнения кода Python:
 ```python
-if __name__ == '__mql__':
-    "run in MetaTrader"
-
-if __name__ == '__main__':
-    "run as script"
+if globals().get('__PythonDLL__'):
+    print('run in MetaTrader')
+elif __name__ == '__main__':
+    print('run as script')
 ```
 
 ## Проблемы и их решения
@@ -67,6 +66,10 @@ Cannot load 'Roffild\PythonDLL\x64\Release\PythonDLL.dll' [126]
 Cannot call 'pyInitialize', 'Roffild\PythonDLL\x64\Release\PythonDLL.dll' is not loaded
 unresolved import function call
 ```
+
+Python это не только python3.dll, но и его окружение, которое нужно настраивать.
+Самое популярное и простое решение это установить [Anaconda](https://www.anaconda.com/distribution/){:target="_blank"}.
+Есть еще [Miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html){:target="_blank"} (минимум 200МБ), если четко знаешь, какие пакеты понадобятся при выполнении скрипта.
 
 Python создавался как отдельное приложение и при встраемости есть проблемы, которые вряд ли когда-нибудь будут исправлены:
 * Некоторые функции из API вызывают Py_FatalError(), которая вызывает системную [abort()](https://docs.microsoft.com/cpp/c-runtime-library/reference/abort){:target="_blank"} для разрушения процесса. Поэтому MetaTrader может закрыться без предупреждения. [issue30560](https://bugs.python.org/issue30560){:target="_blank"}, [issue9828](https://bugs.python.org/issue9828){:target="_blank"}
