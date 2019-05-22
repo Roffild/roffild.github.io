@@ -93,6 +93,8 @@ Fatal Python error: Py_Initialize: unable to load the file system codec
 Выделение памяти - долгая операция, но от объема запрошенной памяти это неслишком зависит.
 Быстрее будет заранее выделить один мегабайт под строку и использовать этот буффер несколько раз, нежели каждый раз запрашивать необходимый объем памяти.
 
+При использовании модуля [multiprocessing](https://docs.python.org/3/library/multiprocessing.html){:target="_blank"} необходимо указывать абсолютный путь к файлу в `__file__` и `sys.argv`. [Пример находится здесь.](https://gist.github.com/Roffild/bbe833354da6f70a3395bc13b25bff60){:target="_blank"}
+
 ## Для разработчиков
 
 [Официальная статья по созданию DLL.](https://www.mql5.com/ru/articles/18){:target="_blank"}

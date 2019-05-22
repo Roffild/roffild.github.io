@@ -93,6 +93,8 @@ When testing, there is always only one interpreter.
 Memory allocation is a long operation, but it doesn’t depend on the amount of memory requested.
 It will be faster to pre-allocate one megabyte per line and use this buffer several times rather than requesting the required amount of memory each time.
 
+When using the [multiprocessing](https://docs.python.org/3/library/multiprocessing.html){:target="_blank"} module, you must specify the absolute path to the file in `__file__` and` sys.argv`. [An example is here.](https://gist.github.com/Roffild/bbe833354da6f70a3395bc13b25bff60){:target="_blank"}
+
 ## For developers
 
 [Official article on creating a DLL.](https://www.mql5.com/en/articles/18){:target="_blank"}
