@@ -37,7 +37,7 @@ class MQL():
 __mql__ = MQL()
 ```
 The class name does not matter, because the reflection of the functions is via the variable `__mql__`.
-Also, the pyEval(..., override_class) function has the argument override_class=true when the variable `__mql__` changes.
+Also, the `pyEval(..., override_class)` function has the argument `override_class=true` when the variable `__mql__` changes.
 
 Example:<br/>
 [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} and
@@ -85,15 +85,26 @@ Fatal Python error: Py_Initialize: unable to load the file system codec
 Compile errors and Python code execution errors are not automatically displayed on the active console.
 But when using the class [CPythonDLL](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/PythonDLL.mqh){:target="_blank"}, errors are displayed in the terminal log.
 
-When you run in the terminal several independent experts, indicators and scripts that use this wrapper for each thread gets its own isolated interpreter using [Py_NewInterpreter()](https://docs.python.org/3/c-api/init.html#c.Py_NewInterpreter){:target="_blank"}.
-But there may be a delay in switching the thread, because Python does not have full multi-threaded execution, but a [global interpreter lock (GIL)](https://docs.python.org/3/glossary.html#term-global-interpreter-lock){:target="_blank"} that blocks other threads when executing Python code.
-
-When testing, there is always only one interpreter.
+There is always only one instance of Python to execute code.
+If several experts, indicators and scripts simultaneously use this Python wrapper without synchronization in one MetaTrader, then the result is not guaranteed.
+There is no such problem when testing.
 
 Memory allocation is a long operation, but it doesn’t depend on the amount of memory requested.
 It will be faster to pre-allocate one megabyte per line and use this buffer several times rather than requesting the required amount of memory each time.
 
 When using the [multiprocessing](https://docs.python.org/3/library/multiprocessing.html){:target="_blank"} module, you must specify the absolute path to the file in `__file__` and` sys.argv`. [An example is here.](https://gist.github.com/Roffild/bbe833354da6f70a3395bc13b25bff60){:target="_blank"}
+
+## Sub-interpreters
+
+The wrapper was created with sub-interpreters, but I had to use a simple GIL.
+Sub-interpreters are not compatible with the popular libraries for Python.
+[issue37186](https://bugs.python.org/issue37186){:target="_blank"}, [issue10915](https://bugs.python.org/issue10915){:target="_blank"}.
+But you can build this wrapper with `PYTHONDLL_SUBINTERPRETERS`.
+
+When you run in the terminal several independent experts, indicators and scripts that use this wrapper for each thread gets its own isolated interpreter using [Py_NewInterpreter()](https://docs.python.org/3/c-api/init.html#c.Py_NewInterpreter){:target="_blank"}.
+But there may be a delay in switching the thread, because Python does not have full multi-threaded execution, but a [global interpreter lock (GIL)](https://docs.python.org/3/glossary.html#term-global-interpreter-lock){:target="_blank"} that blocks other threads when executing Python code.
+
+When testing, there is always only one interpreter.
 
 ## For developers
 

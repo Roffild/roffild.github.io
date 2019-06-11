@@ -37,7 +37,7 @@ class MQL():
 __mql__ = MQL()
 ```
 Название класса неважно, потому что отражение функций идет через переменную `__mql__`.
-Также у функции pyEval(..., override_class) аргумент override_class=true, когда изменяется переменная `__mql__`.
+Также у функции `pyEval(..., override_class)` аргумент `override_class=true`, когда изменяется переменная `__mql__`.
 
 Пример:<br/>
 [PythonDLL_Example.mq5](https://github.com/Roffild/RoffildLibrary/blob/master/Experts/Roffild/Examples/PythonDLL_Example.mq5){:target="_blank"} и
@@ -85,15 +85,26 @@ Fatal Python error: Py_Initialize: unable to load the file system codec
 Ошибки компиляции и выполнения кода Python не отображаются автоматически на активной консоли.
 Но при использовании класса [CPythonDLL](https://github.com/Roffild/RoffildLibrary/blob/master/Include/Roffild/PythonDLL.mqh){:target="_blank"} ошибки отображаются в логе терминала.
 
-При запуске в терминале нескольких независимых экспертов, индикаторов и скриптов, использующих эту обертку, для каждого потока создается свой изолированный интерпретатор с помощью [Py_NewInterpreter()](https://docs.python.org/3/c-api/init.html#c.Py_NewInterpreter){:target="_blank"}.
-Но может возникнуть задержка при переключении потока, потому что в Python нет полноценного многопоточного выполнения, а есть [global interpreter lock (GIL)](https://docs.python.org/3/glossary.html#term-global-interpreter-lock){:target="_blank"}, который блокирует другие потоки при выполнении кода Python.
-
-При тестировании всегда есть только один интерпретатор.
+Всегда есть только один экземпляр Питона для выполнения кода.
+Если несколько экспертов, индикаторов и скриптов будут одновременно использовать эту обертку Питона без синхронизации в одном MetaTrader, то результат не гарантируется.
+При тестировании такой проблемы нет.
 
 Выделение памяти - долгая операция, но от объема запрошенной памяти это неслишком зависит.
 Быстрее будет заранее выделить один мегабайт под строку и использовать этот буффер несколько раз, нежели каждый раз запрашивать необходимый объем памяти.
 
 При использовании модуля [multiprocessing](https://docs.python.org/3/library/multiprocessing.html){:target="_blank"} необходимо указывать абсолютный путь к файлу в `__file__` и `sys.argv`. [Пример находится здесь.](https://gist.github.com/Roffild/bbe833354da6f70a3395bc13b25bff60){:target="_blank"}
+
+## Sub-interpreters
+
+Обертка создавалась с суб-интерпретаторами, но пришлось использовать простой GIL.
+Суб-интерпретаторы не совместимы с популярными библиотеками для Питона.
+[issue37186](https://bugs.python.org/issue37186){:target="_blank"}, [issue10915](https://bugs.python.org/issue10915){:target="_blank"}.
+Но можно собрать эту обертку с `PYTHONDLL_SUBINTERPRETERS`.
+
+При запуске в терминале нескольких независимых экспертов, индикаторов и скриптов, использующих эту обертку, для каждого потока создается свой изолированный интерпретатор с помощью [Py_NewInterpreter()](https://docs.python.org/3/c-api/init.html#c.Py_NewInterpreter){:target="_blank"}.
+Но может возникнуть задержка при переключении потока, потому что в Python нет полноценного многопоточного выполнения, а есть [global interpreter lock (GIL)](https://docs.python.org/3/glossary.html#term-global-interpreter-lock){:target="_blank"}, который блокирует другие потоки при выполнении кода Python.
+
+При тестировании всегда есть только один интерпретатор.
 
 ## Для разработчиков
 
