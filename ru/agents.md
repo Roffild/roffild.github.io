@@ -22,7 +22,8 @@ MetaTrader 4 (MT4) не имеет Агентов тестирования.
 Расчёт стоимости облака происходит по загадочной формуле, поэтому очень сложно оценить затраты на полную оптимизацию.
 
 ## В чём выгода?
-Цены на спот-инстансы доступны [здесь](https://aws.amazon.com/ru/ec2/spot/pricing/){:target="_blank"}. Но после регистрации становится доступна таблица, которую можно получить [при создании спот-инстанса](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} и нажав на серую кнопку "Select".<br/>
+Цены на спот-инстансы доступны [здесь](https://aws.amazon.com/ru/ec2/spot/pricing/){:target="_blank"}.
+Но после регистрации становится доступна таблица, которую можно получить [при создании спот-инстанса](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} (синяя кнопка "Request Spot Instances") и нажав на серую кнопку "Change instance type".<br/>
 ![Spot Prices](/images/agent-spot.png)
 
 Есть особый инстанс:<br/>
@@ -64,6 +65,12 @@ cc2.8xlarge идеально подходит для Агентов тестир
 
 ## Заказ сервера для Агентов
 В разделе [Spot Requests](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} нажать на синюю кнопку "Request Spot Instances".
+
+Появится новый дизайн заказа, у которого все настройки спрятаны под "Additional configurations".
+Переключиться на старый дизайн можно в самом низу страницы по "Previous version of Request Spot Instances".
+
+В новом дизайне нужно выбрать "Defined duration workloads".<br/>
+![Defined duration workloads](/images/agent-defined-duration-workloads.png)
 
 Созданный мною скрипт для запуска Агентов рассчитан на Ubuntu.<br/>
 ![Ubuntu](/images/agent-ubuntu.png)

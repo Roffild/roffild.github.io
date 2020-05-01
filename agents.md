@@ -23,7 +23,7 @@ Calculation of the cost of the Cloud occurs by a mysterious formula, so it is ve
 
 ## What is the profit?
 Prices for spot-instances are available [here](https://aws.amazon.com/ec2/spot/pricing/){:target="_blank"}. 
-But after registration, the table is available that can be obtained by [creating a spot-instance](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} and clicking on the gray "Select" button.<br/>
+But after registration, the table is available that can be obtained by [creating a spot-instance](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} (blue "Request Spot Instances" button) and clicking on the gray "Change instance type" button.<br/>
 ![Spot Prices](/images/agent-spot.png)
 
 There is a special instance:<br/>
@@ -65,6 +65,13 @@ The download should be done for each region in which the Agents are scheduled to
 
 ## Request server for Agents
 In the [Spot Requests](https://console.aws.amazon.com/ec2sp/v1/spot/home){:target="_blank"} click on the blue "Request Spot Instances" button.
+
+A new request design will appear, in which all the settings are hidden under "Additional configurations".
+You can switch to the old design at the very bottom of the page by "Previous version of Request Spot Instances".
+
+In the new design, select "Defined duration workloads".<br/>
+![Defined duration workloads](/images/agent-defined-duration-workloads.png)
+
 The script I created for running Agents is designed for Ubuntu.<br/>
 ![Ubuntu](/images/agent-ubuntu.png)
 

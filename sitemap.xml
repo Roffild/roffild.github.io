@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://roffild.com/agents.html</loc><lastmod>2018-08-25T23:08:19+00:00</lastmod><priority>1.0</priority></url>
-<url><loc>https://roffild.com/</loc><lastmod>2019-09-04T23:37:19+00:00</lastmod><priority>1.0</priority></url>
-<url><loc>https://roffild.com/index.html</loc><lastmod>2019-09-04T23:37:19+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/agents.html</loc><lastmod>2020-05-01T21:29:22+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/</loc><lastmod>2020-05-01T21:33:41+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/index.html</loc><lastmod>2020-05-01T21:33:41+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/Log4MQL.html</loc><lastmod>2018-07-04T21:01:43+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/PythonDLL.html</loc><lastmod>2019-06-11T00:21:17+00:00</lastmod><priority>1.0</priority></url>
-<url><loc>https://roffild.com/ru/agents.html</loc><lastmod>2018-08-25T23:10:30+00:00</lastmod><priority>1.0</priority></url>
-<url><loc>https://roffild.com/ru/</loc><lastmod>2019-09-04T23:37:19+00:00</lastmod><priority>1.0</priority></url>
-<url><loc>https://roffild.com/ru/index.html</loc><lastmod>2019-09-04T23:37:19+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/ru/agents.html</loc><lastmod>2020-05-01T21:23:41+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/ru/</loc><lastmod>2020-05-01T21:33:41+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/ru/index.html</loc><lastmod>2020-05-01T21:33:41+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/ru/Log4MQL.html</loc><lastmod>2018-07-04T21:01:43+00:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://roffild.com/ru/MetaTrader5-Bugs.html</loc><lastmod>2020-03-13T21:37:14+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/ru/PythonDLL.html</loc><lastmod>2019-06-10T23:52:25+00:00</lastmod><priority>1.0</priority></url>
 <url><loc>https://roffild.com/mql5/annotated.html</loc><lastmod>2019-03-19T23:09:18+00:00</lastmod><priority>0.5</priority></url>
 <url><loc>https://roffild.com/mql5/classes.html</loc><lastmod>2019-03-19T23:09:18+00:00</lastmod><priority>0.5</priority></url>
